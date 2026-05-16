@@ -15,8 +15,8 @@ export default function DownloadSection() {
               </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 col-12">
-              <div className="android-img" style={{ textAlign: 'center' }}>
-                <figure style={{ margin: 0 }}>
+              <div className="android-img">
+                <figure>
                   <Image
                     src="/lp-images/bb7android.324f0208.png"
                     alt="Download APBook Android App"

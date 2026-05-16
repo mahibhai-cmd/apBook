@@ -10,7 +10,6 @@
   --fancy-tabs:               #12bcca;
   --active_clr_world_casino:  #fe3030;
   --light_bg_world_casino:    #363636;
-  /* LP20 page bg */
   --page-bg:  #1a1f2c;
   --card-bg:  rgb(42 50 70);
   --card2-bg: #1e2433;
@@ -29,27 +28,9 @@ body {
   overflow-x: hidden;
 }
 
-a { text-decoration: none; color: inherit; }
+/* Remove underline on all links but do NOT override LP20 link colors */
+a { text-decoration: none; }
 img { max-width: 100%; height: auto; }
-
-/* ── Announcement bar ────────────────────────────────── */
-.announcement-bar {
-  background: var(--header_color);
-  color: #fff;
-  padding: 7px 0;
-  overflow: hidden;
-  border-bottom: 1px solid var(--orange_color);
-  font-size: 13px;
-}
-.announcement-bar .marquee-inner {
-  display: inline-block;
-  white-space: nowrap;
-  animation: marquee 28s linear infinite;
-}
-@keyframes marquee {
-  0%   { transform: translateX(100vw); }
-  100% { transform: translateX(-100%); }
-}
 
 /* ── Header ──────────────────────────────────────────── */
 .header-wapper-main {
@@ -69,30 +50,29 @@ img { max-width: 100%; height: auto; }
 .logo-sec      { margin: 0; }
 .logo-sec .logo { height: 46px; width: auto; object-fit: contain; }
 
+/* Both Login and Register: solid teal fill — matches LP20 .cmn-btn123 a */
 .cmn-btn123 { display: flex !important; gap: 10px; align-items: center; }
 .cmn-btn123 > div > a, .cmn-btn123 > div > button {
-  display: inline-block;
-  padding: 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 56px;
   border-radius: 5px;
-  font-size: 14px; font-weight: 600;
-  cursor: pointer; border: none;
-  transition: opacity .2s;
-}
-/* Login = outline */
-.cmn-btn123 > div:first-child > a {
-  background: transparent;
-  border: 1.5px solid #fff;
-  color: #fff;
-}
-.cmn-btn123 > div:first-child > a:hover { background: rgba(255,255,255,.15); }
-/* Register = filled teal */
-.signUpBtn > a {
-  background: var(--orange_color) !important;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background-color: #029DE0;
   color: #000 !important;
+  transition: opacity .2s;
+  text-decoration: none;
 }
-.signUpBtn > a:hover { opacity: .85; }
+.cmn-btn123 > div > a:hover,
+.cmn-btn123 > div > button:hover { opacity: .85; }
 
-/* The hero banner sits under the transparent header — no extra padding needed */
+/* Hero banner sits under transparent header — no padding needed */
 main { padding-top: 0; }
 
 /* ── Hero Banner ─────────────────────────────────────── */
@@ -110,42 +90,48 @@ main { padding-top: 0; }
   background: rgba(255,255,255,.5);
   transition: all .3s;
 }
-.carousel-dot.active { background: var(--orange_color); width: 20px; border-radius: 4px; }
+.carousel-dot.active { background: #029DE0; width: 20px; border-radius: 4px; }
 
 /* ── Register Steps ──────────────────────────────────── */
 .registerd-and-deposit-sec { margin-top: 70px; padding: 20px 0; }
 
+/* LP20: row flex, centered — icon left, text right via .cmn-container123 a { flex-direction: row } */
 .cmn-container123 {
   background-color: rgb(42 50 70);
   text-align: center;
   border-radius: 15px;
-  min-height: 200px;
+  min-height: 280px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 15px;
   margin: 10px 0;
   cursor: pointer;
   transition: transform .2s, box-shadow .2s;
 }
 .cmn-container123:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.4); }
 
+/* .cmn-sec wraps the icon circle + absolute badge */
 .cmn-sec { position: relative; display: inline-block; }
-.img-wrapper { display: flex; justify-content: center; align-items: center; height: 90px; }
-.img-wrapper img { max-width: 80px; max-height: 80px; object-fit: contain; }
+
+/* Let LP20 control .img-wrapper size (115×115, dark circle bg) — only add display */
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .digit-round-bg {
   width: 40px; height: 40px; border-radius: 50%;
   background-color: #029DE0;
-  position: absolute; bottom: -10px; right: -10px;
+  position: absolute; bottom: -10px; right: 0;
   display: flex; align-items: center; justify-content: center;
   z-index: 2;
 }
 .digit-round-text { color: #000; font-size: 14px; font-weight: 700; }
 
-.heading-3 { margin-top: 18px; }
-.heading-3 span { color: #fff; font-size: 18px; font-weight: 600; }
+/* In row layout, heading sits to the right of the icon */
+.heading-3 { margin-left: 16px; text-align: left; }
+.heading-3 span { color: #fff; font-size: 20px; font-weight: 600; }
 
 /* ── Section headings ────────────────────────────────── */
 .live-and-promo-heading h3 {
@@ -165,64 +151,44 @@ section.live-and-promotions-sec { margin-top: 75px; }
 
 .casino-img.live-casino-bx { cursor: pointer; display: inline-block; }
 .Casino-resize.live-img {
-  width: 100px; height: 100px;
+  width: 110px; height: 110px;
   border-radius: 10px; overflow: hidden; margin: 5px;
 }
 .Casino-resize.live-img img {
   width: 100%; height: 100%; object-fit: cover;
 }
 
-.sports-content img { border-radius: 8px; margin: 5px; }
+.live-games-grid { display: flex; flex-wrap: wrap; gap: 8px; }
 
 .promotion-slider .item figure img {
   width: 100%; border-radius: 10px;
 }
 
-.live-games-grid {
-  display: flex; flex-wrap: wrap; gap: 8px;
-}
-.new-games-grid {
-  display: flex; flex-wrap: wrap; gap: 8px;
-}
-
 /* ── Download APK section ────────────────────────────── */
-section.download-apk-sec {
-  margin-top: 50px;
-  background: linear-gradient(135deg, #171c28 0%, #1c2232 100%);
-  padding: 50px 0;
+section.download-apk-sec { margin-top: 50px; padding: 40px 0; }
+
+/* LP20 .download-app uses background-color: #029DE0 + a background image */
+.download-app {
+  background-image: url('/lp-images/community_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #029DE0;
+  border-radius: 30px;
+  overflow: hidden;
 }
-.download-title h3 {
-  color: #fff; font-size: 42px; font-weight: 700; line-height: 1.2;
-  margin-bottom: 20px;
-}
-button.down-ld-app {
-  font-size: 16px; font-weight: 700; letter-spacing: 1px;
-  border: 0; cursor: pointer;
-  background-color: rgb(32 38 54);
-  color: #fff;
-  padding: 16px 36px;
-  border-radius: 5px;
-  margin-top: 10px;
-  transition: transform .15s;
-}
-button.down-ld-app:hover { transform: translate(4px, 4px); }
 
 /* ── Why Choose Us ───────────────────────────────────── */
 section.choose-game-sec { margin-top: 75px; padding: 50px 0; }
 
-.w-c-main-container {
-  text-align: center;
-  background: #1e2433;
-  padding: 28px 20px;
-  border-radius: 20px;
-  height: 100%;
-  transition: box-shadow .2s;
+/* LP20 controls .w-c-main-container (background: #1e2433, border-radius: 20px) */
+/* LP20 controls .wc-logo-img figure (160×160 circle with gradient border) */
+.wc-logo-img figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
-.w-c-main-container:hover { box-shadow: 0 16px 32px rgba(0,0,0,.4); }
-.wc-logo-img figure { display: flex; justify-content: center; margin-bottom: 0; }
-.wc-logo-img img { width: 80px; height: 80px; object-fit: contain; }
-.wc-title h3 { color: #fff; font-size: 22px; font-weight: 700; margin: 14px 0 8px; }
-.wc-text p  { color: #bfc6d7; font-size: 15px; line-height: 1.6; }
 .wc-main { margin-top: 25px; height: 100%; }
 
 /* ── Game Counter ────────────────────────────────────── */
@@ -234,71 +200,51 @@ section.choose-game-sec { margin-top: 75px; padding: 50px 0; }
 }
 .grid-sub-container { min-width: 220px; }
 .cg-support-and-help {
-  background-color: var(--card-bg);
-  border-radius: 15px;
-  padding: 24px;
   display: flex; gap: 16px; align-items: center;
+  padding: 8px;
 }
-.cg-support-and-help .heading-3 { margin-top: 0; }
-.cg-support-and-help .heading-3 span { font-size: 16px; }
+.cg-support-and-help .heading-3 { margin-left: 12px; }
+.cg-support-and-help .heading-3 span { font-size: 15px; }
 
 /* ── Connect With Us ─────────────────────────────────── */
 section.contact-us-sec { margin-top: 75px; padding: 50px 0; }
-.supprt-text {
-  text-align: center; margin-bottom: 24px;
-}
-.supprt-text p {
-  color: #bfc6d7; font-size: 16px; line-height: 1.6;
-  display: inline-block;
-}
+.supprt-text { text-align: center; margin-bottom: 24px; }
+.supprt-text p { color: #bfc6d7; font-size: 16px; line-height: 1.6; display: inline-block; }
 .socail-icons-container { text-align: center; margin-bottom: 50px; }
 .socail-list-name { list-style: none; padding: 0; margin: 20px 0; }
-.socail-list-name li {
-  display: inline-block; padding: 5px;
-}
+.socail-list-name li { display: inline-block; padding: 5px; }
 .socail-list-name li a img {
-  width: 50px; height: 50px; object-fit: contain;
+  width: 60px; height: 60px; object-fit: contain;
   transition: transform .2s;
 }
 .socail-list-name li a:hover img { transform: scale(1.15); }
 
 /* ── Footer ──────────────────────────────────────────── */
+/* LP20 controls footer colors — gold (#ffb80c / #f2ab00) for links */
 .footer-wrapper {
   background-color: var(--page-bg);
   border-top: 1px solid rgba(255,255,255,.08);
   margin-top: 50px; padding: 30px 0 20px;
 }
-.footer-group-sec {
-  display: flex; justify-content: center; padding: 10px 0; margin-bottom: 20px;
-}
-.footer-group-contant { display: flex; gap: 16px; align-items: center; }
+/* LP20's .footer-group-sec { display:flex; margin:0 auto; justify-content:center } */
 .footer-group-contant .group-img img { width: 56px; height: 56px; object-fit: contain; }
-.footer-group-contant .group-content h4 { color: var(--orange_color); font-size: 16px; margin: 0 0 4px; }
-.footer-group-contant .group-content p  { color: #bfc6d7; font-size: 13px; margin: 0 0 6px; }
-.contact-us { color: var(--orange_color); font-size: 13px; cursor: pointer; text-decoration: underline; }
 
 .footer-partner-wrapper { margin-bottom: 20px; }
-.partner-content p {
-  font-size: 13px; line-height: 1.5; font-weight: 400;
-  margin-bottom: 8px; color: rgba(242,242,242,.8);
-}
-.Responsible-sec, .Payment-sec {
-  display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
-}
+.Responsible-sec { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.Payment-sec { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 .partner-img img { height: 36px; width: auto; object-fit: contain; }
+
+/* Payment method text labels */
 .payment-label {
   background: var(--card-bg); color: #bfc6d7;
   font-size: 12px; padding: 5px 12px; border-radius: 4px;
 }
 
+/* LP20 controls .know-more li a color (#f2ab00 gold) — don't override */
 .know-more {
   list-style: none; padding: 0; margin: 0;
   display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end;
 }
-.know-more li a { color: rgba(242,242,242,.8); font-size: 13px; transition: color .2s; }
-.know-more li a:hover { color: var(--orange_color); }
-
-.copy-right p { font-size: 12px; color: rgba(242,242,242,.6); margin-top: 12px; }
 
 /* WhatsApp float */
 .whatsapp-fix-wrapper {
@@ -317,10 +263,10 @@ section.contact-us-sec { margin-top: 75px; padding: 50px 0; }
 /* Back to top */
 .go-to-top-btn {
   position: fixed; bottom: 16px; right: 16px; z-index: 9999;
-  background: var(--orange_color); border-radius: 50%;
+  background: #029DE0; border-radius: 50%;
   width: 42px; height: 42px;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 4px 14px rgba(18,188,202,.4);
+  box-shadow: 0 4px 14px rgba(2,157,224,.4);
   transition: transform .2s;
 }
 .go-to-top-btn:hover { transform: translateY(-3px); }
@@ -411,9 +357,7 @@ section.contact-us-sec { margin-top: 75px; padding: 50px 0; }
   border: none; border-radius: 4px; font-weight: 700;
   cursor: pointer; margin-bottom: 18px; font-size: 15px;
 }
-.or-divider {
-  position: relative; text-align: center; margin: 16px 0;
-}
+.or-divider { position: relative; text-align: center; margin: 16px 0; }
 .or-divider::before {
   content: ''; position: absolute;
   top: 50%; left: 0; right: 0; border-top: 1px solid #ddd;
@@ -441,7 +385,8 @@ section.contact-us-sec { margin-top: 75px; padding: 50px 0; }
   .login-left-sec { max-width: 100%; padding: 24px 16px; }
   .know-more      { justify-content: center; }
   .head-nav-sec   { padding: 0 8px; }
-  .cmn-btn123 > div > a { padding: 7px 14px; font-size: 13px; }
+  .cmn-btn123 > div > a,
+  .cmn-btn123 > div > button { width: 100px; height: 44px; font-size: 13px; }
   .download-title h3 { font-size: 28px; }
   .wc-title h3 { font-size: 18px; }
   .main-grid-container { grid-template-columns: 1fr; }

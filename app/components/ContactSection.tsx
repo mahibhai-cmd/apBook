@@ -5,11 +5,8 @@ const WHATSAPP = 'https://wa.me/94740968614';
 const TELEGRAM = 'https://t.me/APBOOKORIGINAL';
 
 const SOCIALS = [
-  { img: '/lp-images/wt1.png',       alt: 'WhatsApp',  href: WHATSAPP },
-  { img: '/lp-images/telegram.png',  alt: 'Telegram',  href: TELEGRAM },
-  { img: '/lp-images/instagram.png', alt: 'Instagram', href: '#'      },
-  { img: '/lp-images/youtube.png',   alt: 'YouTube',   href: '#'      },
-  { img: '/lp-images/facebook.png',  alt: 'Facebook',  href: '#'      },
+  { img: '/lp-images/wt1.png',      alt: 'WhatsApp', href: WHATSAPP },
+  { img: '/lp-images/telegram.png', alt: 'Telegram', href: TELEGRAM },
 ];
 
 export default function ContactSection() {

@@ -16,8 +16,8 @@ export default function StepsSection() {
           {STEPS.map(({ num, label, img }) => (
             <div key={num} className="col-lg-3 col-sm-6 col-6">
               <div className="cmn-container123">
-                <Link href="/register" style={{ textDecoration: 'none', display: 'block', width: '100%' }}>
-                  <div className="cmn-sec" style={{ position: 'relative' }}>
+                <Link href="/register">
+                  <div className="cmn-sec">
                     <figure className="img-wrapper">
                       <Image src={img} alt={label} width={90} height={90} />
                     </figure>
