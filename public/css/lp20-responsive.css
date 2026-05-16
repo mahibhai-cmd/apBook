@@ -1,0 +1,1593 @@
+@media screen and (max-width: 1200px) {
+
+    .registerd-and-deposit-sec {
+        margin-top: 60px;
+    }
+
+
+    .live-img video {
+        height: 250px !important;
+    }
+    .ball-animation-img-1 img {
+        position: absolute;
+        right: 5%;
+        top: 20%;
+        width: 240px !important;
+    }
+    
+    .choose-game-con {
+        margin: 0px 90px;
+    } 
+
+    .ball-animation-img-3 img {
+        position: absolute;
+        left: 19%;
+        top: auto;
+        bottom: 16%;
+        width: 99px !important;
+    }
+    .ball-animation-img-2 img {
+        position: absolute;
+        left: 0%;
+        top: 53%;
+        width: 99px !important;
+    }
+    .step-head-sec {
+        width: 475px;
+        margin: 0 auto;
+    }
+    .download-title {
+        margin-top: 30px;
+    }
+    .download-title h3 {
+        font-size: 57px;
+        line-height: 65px;
+    }
+    button.down-ld-app {
+        margin-top: 20px;
+    }
+    .android-img figure img {
+        width: 250px;
+        padding: 25px;
+    }
+    .choose-game-sec .container {
+        width: 100%;
+    }
+    .footer-logo figure img {
+        height: 40px;
+    }
+    .supprt-text {
+        width: 675px;
+    }
+    .socail-icons-container .socail-list-name li {
+        padding: 3px;
+    }
+    .registration-form-sec {
+        width: 450px;
+    }
+    .footer-text.supprt-text {
+        width: 100%;
+        margin: inherit;
+    }
+    .footer-text.supprt-text p {
+        padding: 0px 65px;
+    }
+    li.nav-item.socail-icons a i {
+        color: #fff;
+        font-size: 20px;
+    }
+    .navbar-sec ul.navbar-nav.me-auto.mb-lg-0 {
+        width: 55%;
+        flex-direction: revert;
+        margin-top: 0px;
+        padding: 20px 0px;
+      }
+      li.nav-item.socail-icons a {
+        height: 35px;
+        width: 35px;
+        padding: 8px;
+    }
+    .navbar-sec ul.navbar-nav.me-auto.mb-lg-0 {
+        width: 55%;
+        flex-direction: revert;
+        margin-top: 0px;
+        padding: 20px 0px;
+        justify-content: end;
+    }
+
+    
+    .footer-wrapper {
+        margin-top: 40px;
+    }
+
+    .partner-content-img {
+        width: 100%;
+         overflow: hidden; 
+        overflow-x: auto;
+    }
+
+    .Payment-sec img{
+        max-width:fit-content;
+    }
+
+    .Payment-sec img {
+        width: 75px;
+    }
+
+    
+      /* ***********inner-css-********** */
+
+      .faq-sec {
+        margin: 20px 90px;
+    }
+    .thm-heading h2 {
+        font-size: 26px;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+ 
+    .choose-game-con {
+        margin: 0px 40px;
+    } 
+
+    .footer-wrapper {
+        margin-top: 30px;
+    }
+
+   
+}
+@media screen and (max-width: 991px) {
+    .grid-sub-container {
+        min-width: 230px;
+    }
+    .registerd-and-deposit-sec {
+        margin-top: 40px;
+    }
+
+
+    .header-banner{
+        margin-top:60px !important;
+      }
+
+    .faq-wrapper {
+        margin-top: 40px;
+    }
+
+    .live-and-promo-heading h3 {
+        font-size: 28px;
+    }
+
+    section.live-and-promotions-sec {
+        margin-top: 60px;
+    }
+
+    .digit-round-bg {
+        width: 34px;
+        background-color: #029DE0;
+        height: 34px;
+        border-radius: 100px;
+        position: absolute;
+        top: auto;
+        right: 4px;
+        line-height: 40px;
+        bottom: 0;
+    }
+    .img-wrapper {
+        height: 100px;
+        width: 100px;
+    }
+
+    .heading-1 h2 {
+        font-size: 47px;
+    }
+
+    .ball-animation-img-3 img {
+        bottom: 30%;
+    }
+
+    .ball-animation-img-2 img {
+        top: 40%;
+    }
+
+    .ball-animation-img-1 img {
+        right: 5%;
+        top: 4%;
+        width: 190px !important;
+    }
+    .cmn-btn123 a {
+        height: 46px;
+        line-height: normal;
+      }
+      
+      
+    .cmn-btn123 button {
+        height: 46px;
+      }
+
+    .forget-login {
+        padding: 15px 20px;
+    }
+
+    .group-content h4 {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    
+    .group-content p {
+        font-size: 14px;
+    }
+
+    .payment-warpper {
+        margin-top: 10px;
+    }
+
+    .choose-game-con {
+        margin: 0px ;
+    }
+    .cmn-container123 {
+        min-height: 245px;
+    }
+
+    .wc-logo-img figure {
+        width: 125px;
+        height: 125px;
+        line-height: 120px;
+    }
+    .logo-sec img {
+        height: auto;
+        width: 110px;
+    }
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.55);
+        border-color: rgba(0,0,0,.1);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .step-head-sec {
+        width: 100%;
+    }
+    .wc-main {
+        margin-top: 0;
+        height: initial;
+    }
+    .w-c-main-container {
+        height: 425px !important;
+        margin: 15px 15px;
+    }
+    .choose-game-sec .row {
+        --bs-gutter-x: 0px;
+        --bs-gutter-y: 0;
+    }
+    .game-conter-sec {
+        margin-top: 100px;
+    }
+    .supprt-text {
+        width: 600px;
+    }
+    .footer-logo figure img {
+        height: 30px;
+    }
+    .navbar-sec ul.navbar-nav.me-auto.mb-lg-0 {
+        width: 55%;
+        flex-direction: revert;
+        margin-top: 70px;
+        padding: 20px 0px;
+        justify-content: flex-start;
+    }
+    span.navbar-toggler-icon.mobile-view {
+        position: absolute;
+        top: -25px;
+        right: 10px;
+    }
+    .frame-img-11 {
+        display: none;
+    }
+    .cmn-container123 {
+        min-height: 290px;
+    }
+
+    
+/* ***************************login-signup*************************** */
+
+.header-nav {
+    flex-flow: row-reverse;
+    justify-content: end;
+}
+.navbar-light .navbar-toggler {
+    margin-left: 10px;
+    padding: 0;
+}
+.sub-footer .navbar-nav {
+    display: flex;
+    flex-direction: inherit;
+}
+.sub-footer ul li {
+    padding: 0px 8px;
+}
+.nev-list {
+    position: absolute;
+    top: 55px;
+    padding: 5px 11px;
+    background-color: #000;
+    border-radius: 11px;
+    right: 19px;
+    z-index: 999;
+}
+.login-account .login-now {
+    width: 100%;
+    margin: 0;
+}
+.login-account .login-form {
+    font-size: 26px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.head-nav .navbar-light .navbar-nav .nav-link,
+.sub-footer .navbar-light .navbar-nav .nav-link {padding: 4px 0;}
+
+ /* ***************************login-signup*************************** */
+
+ .header-nav {
+    flex-flow: row-reverse;
+    justify-content: end;
+}
+.navbar-light .navbar-toggler {
+    margin-left: 10px;
+    padding: 0;
+}
+.sub-footer .navbar-nav {
+    display: flex;
+    flex-direction: inherit;
+}
+.sub-footer ul li {
+    padding: 0px 8px;
+}
+.nev-list {
+    position: absolute;
+    top: 55px;
+    padding: 5px 11px;
+    background-color: #000;
+    border-radius: 11px;
+    right: 19px;
+    z-index: 999;
+}
+.login-account .login-now {
+    width: 100%;
+    margin: 0;
+}
+.login-account .login-form {
+    font-size: 26px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.head-nav .navbar-light .navbar-nav .nav-link,
+.sub-footer .navbar-light .navbar-nav .nav-link {padding: 4px 0;}
+
+
+/* ***********inner-css-********** */
+
+.faq-sec {
+    margin: 20px 90px;
+}
+
+.thm-heading p {
+    font-size: 14px;
+}
+
+.accordion-button::after {
+    background-size: 20px !important;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+  
+    background-size: 20px !important;
+  }
+
+  .privacy-wrapper {
+    padding: 15px 25px;
+    margin: 25px 0px;
+}
+
+.Privacy-con ul li h3 {
+    font-size: 16px;
+}
+
+
+.Privacy-con h5{
+    font-size: 24px;
+  }
+
+.Privacy-con {
+    margin-top: 20px;
+}
+
+.Privacy-con h2{
+    font-size: 20px;
+  }
+  
+  .Privacy-con h1{
+    font-size: 30px;
+  }
+
+.Privacy-con h3{
+    font-size: 18px;
+}
+.Privacy-con p{
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+    .main-grid-container {
+        grid-template-columns: auto auto;
+    }
+    .ball-animation-img-2 img {
+        top: 20%;
+    }
+
+    .responsive-img{
+        display: inline-block;
+    }
+
+    .download-title{
+        display: none;
+    }
+
+    .android-img{
+        display: none;
+    }
+
+    section.download-apk-sec {
+        margin-top: 20px;
+    }
+    .cmn-btn123 a {
+        font-size: 16px;
+    }
+    .ball-img-4 {
+        display: none;
+    }
+
+    .ball-img-2 {
+        display: none;
+    }
+    .ball-animation-img-3 img {
+        bottom: 13%;
+    }
+
+    .cmn-btn123 button {
+        font-size: 16px;
+    }
+
+    .download-title h3 {
+        font-size: 36px;
+        line-height: 65px;
+    }
+    .wc-text p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 15px;
+    }
+    .w-c-main-container {
+        height: 375px !important;
+        margin: 15px auto;
+        width: 350px;
+    }
+    .step-head-sec h3 {
+        font-size: 32px;
+        padding-bottom: 15px;
+        margin-top: 30px;
+    }
+    .banner-inside-sec {
+        width: 100%;
+        padding: 40px 0px;
+    }
+    .heading-1 h2 {
+        font-size: 32px;
+        line-height: normal;
+    }
+    .header-wapper {
+        min-height: 420px;
+    }
+
+    .about-text {
+        padding: 0px 20px;
+    }
+    .android-img figure img {
+        width: 335px;
+        padding: 10px;
+    }
+    .choose-heading-text h2 {
+        font-size: 32px;
+        line-height: 0px;
+    }
+    .inp-fill-form label {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .registration-form-sec {
+        width: 400px;
+    }
+    .inp-fill-form .form-control {
+        padding: 17px 150px 17px 30px;
+    }
+    .footer-logo figure img {
+        height: 25px;
+    }
+    .footer-text.supprt-text p {
+        padding: 0px 0px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    span.navbar-toggler-icon.mobile-view {
+        padding: 5px;
+        height: 32px;
+        width: 30px;
+    }
+    .live-img video {
+        height: 200px !important;
+    }
+
+
+    .ball-animation-img-1 img {
+        top: 24%;
+        width: 90px !important;
+    }
+    .ball-img-1 {
+        display: none;
+    }
+
+    .ball-img-3 {
+        display: none;
+    }
+
+    /*****************************login-sigup************************** */
+    .header-nav {
+        width: 62%;
+    }
+    .head-nav .btn.btn-join-now {
+        font-size: 13px;
+        padding: 4px 15px;
+    }
+    .login-account .login-now {
+        width: 80%;
+        height:auto;
+        padding-top: 15px;
+    }
+    .forget-login{height: auto ;}
+    .head-nav .btn.btn-log-in {
+        font-size: 13px;
+        padding: 5px 17px;
+    }
+    .side-socail {
+        margin-top: 15px;
+    }
+    .login-account .people-in {
+        display: none;
+    }
+    .socail-1 {
+        position: inherit;
+        text-align: center;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+    }
+    .socail-1 ul li {
+        display: inline-block;
+        padding: 5px;
+    }
+    .socail-1 ul li a img {
+        width: 35px;
+    }
+    .col-lg-6.right-side-img {
+        display: none;
+    }
+    .login-mobile-view-img {
+        display: inline-block;
+        max-height: 100%;
+        margin-bottom: 0;
+        width: 100%;
+    }   
+    .login-mobile-view-img {
+        display: inline-block;
+        max-height: 500px;
+        margin-bottom: -30px;
+    }
+    .socail-1 ul {
+        display: initial;
+    }
+
+    /* *********inner-css****** */
+    .privacy-wrapper {
+        padding: 15px 20px;
+        margin: 20px 0px;
+    }
+
+    .Privacy-con {
+        margin-top: 15px;
+    }
+    .thm-heading h2 {
+        font-size: 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 678px){
+    .ball-animation-img-3 img {
+        bottom: 10%;
+        width: 70px !important;
+    }
+    .cmn-container123 {
+        min-height: 230px;
+    }
+
+
+    section.whatsapp-fix {
+        position: fixed;
+        bottom: 1%;
+        right: 4%;
+        z-index: 998;
+    }
+
+    .faq-wrapper {
+        margin-top: 20px;
+    }
+
+    /* ***********inner-css-********** */
+
+   
+    .Privacy-con h2{
+        font-size: 18px;
+      }
+      
+      .Privacy-con h1{
+        font-size: 24px;
+      }
+
+
+    .faq-sec {
+        margin: 20px 60px;
+    }
+    .privacy-wrapper {
+        padding: 10px 15px;
+        margin: 15px 0px;
+    }
+
+    .Privacy-con h3{
+        font-size: 16px;
+    }
+
+    
+.Privacy-con h5{
+    font-size: 14px;
+    margin: 6px 0px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .forget-login {
+        padding: 10px 15px;
+    }
+
+    .live-and-promo-heading h3 {
+        font-size: 22px;
+    }
+
+    section.live-and-promotions-sec {
+        margin-top: 40px;
+    }
+
+    
+    .footer-logo {
+        width: 30%;
+    }
+    .footer-logo-sec {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-menu ul {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .copy-right .partner-content {
+        margin-top: 4px;
+        text-align: center !important;
+    }
+
+    .main-grid-container {
+        grid-template-columns: auto;
+    }
+    .supprt-text {
+        width: 100%;
+    }
+    .logo-sec img {
+        height: auto;
+        width: 120px;
+    }
+    .heading-1 h2 {
+        font-size: 32px;
+        line-height: 35px;
+        padding: 0px 35px;
+    }
+
+    .cmn-btn123 button {
+        width: 125px;
+        line-height: 25px;
+        font-size: 16px;
+    }
+    .android-img figure img {
+        width: 250px;
+        padding: 10px;
+    }
+    button.down-ld-app {
+        font-size: 16px;
+        padding: 8px 15px;
+        margin-top: 10px;
+    }
+    .w-c-main-container {
+        width: 320px;
+    }
+    .enquire-btn123 .cmn-btn123 button {
+        width: 160px;
+        padding: 6px;
+    }
+    .inp-fill-form .form-control {
+        padding: 15px 150px 15px 30px;
+    }
+    .f-l-row {
+        display: block;
+    }
+    .col-6-r {
+        width: 100%;
+    }
+    .col-6-l {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .footer-text.supprt-text p {
+        padding: 0px 55px;
+    }
+    .copy-rgt-sec p {
+        color: #bfc6d7;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .copy-rgt-sec {
+        margin: 10px 0px;
+    }
+    .cmn-container123 {
+        min-height: 190px;
+    }
+    .navbar-sec ul.navbar-nav.me-auto.mb-lg-0 {
+        margin-top: 35px;
+        padding: 7px 0px;
+    }
+
+    .apk-logo img {
+        max-width: 160px;
+    }
+
+     /* ******************************login-sigup******************************* */
+     .navbar {
+        padding-top: 0px;
+    }
+    .header-nav {
+        width: 84%;
+    }
+    .socail-1 ul li a img {
+        width: 29px;
+    }
+    .login-account .login-now {
+        width: 100%;
+    }
+ 
+    .sub-footer .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .login-account .btn.thm-but {
+        padding: 10px;
+    }
+    .login-mobile-view-img {
+        max-height: 270px;
+        margin-bottom: -10px;
+    }
+ 
+    
+     /* ***********inner-css-********** */
+ 
+     .faq-sec {
+         margin: 20px 40px;
+     }
+
+     .heading-logo-menu-section {
+        padding: 0px 15px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .betfair ul {
+        justify-content: center;
+        margin-right: 0px;   
+        flex-wrap: nowrap;
+    }
+
+    .body-container {
+        box-shadow: 0px 10px 10px #b0c9cceb;
+        border-radius: 10px;
+    }
+
+    .header-section {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 15px 0px;
+    }
+
+    
+  .slider-join-us-sec-1 a {
+    font-size: 14px;
+    padding: 6px 20px;
+}
+.header-banner .owl-nav, .header-banner .owl-dots {
+    left: 5%;
+    bottom: 2%;
+}
+.socail-list-name li a img {
+	width: 40px;
+}
+
+}
+
+@media screen and (max-width: 479px) {
+    .live-and-promo-heading h3 {
+        font-size: 20px;
+    }
+
+    .registerd-and-deposit-sec {
+        margin-top: 20px;
+    }
+
+
+    section.download-apk-sec {
+        margin-top: 10px;
+    }
+
+    
+    .faq-wrapper {
+        margin-top: 10px;
+    }
+
+    .cmn-container123 {
+        min-height: 90px;
+    }
+
+    .img-wrapper {
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+    }
+    .digit-round-text {
+        font-size: 16px;
+    }
+
+    
+    .forget-login {
+        padding: 10px 8px;
+    }
+    .ball-animation-img-3 img {
+        bottom: 17%;
+        width: 57px !important;
+        left: 10%;
+    }
+
+    .frame-img-12 img {
+        position: absolute;
+        right: 8%;
+        top: auto;
+        width: 80px !important;
+        bottom: 5%;
+    }
+
+    .ball-animation-img-2 img {
+        width: 40px !important;
+    }
+
+    .ball-animation-img-1 img {
+        width: 60px !important;
+    }
+
+    .header-wapper {
+        min-height: 480px;
+    }
+    .header-banner {
+		margin-top: 50px !important;
+	}
+    
+    section.live-and-promotions-sec {
+        margin-top: 20px;
+    }
+    
+    .cmn-btn123 button {
+        font-size: 14px;
+    }
+    
+    .cmn-btn123 a {
+        height:auto;
+        padding: 6px 10px;
+        width: auto;
+        font-size: 12px;
+      }
+      
+      
+    .cmn-btn123 button {
+        line-height: normal;
+        height:auto;
+        padding: 10px 15px;
+        width: auto;
+      }
+
+
+    .registration-form-sec {
+        width: 335px;
+    }
+    .footer-logo figure img {
+        height: 22px;
+    }
+    .enquire-btn123 .cmn-btn123 button {
+        width: 145px;
+        padding: 5px;
+    }
+    .copy-rgt-sec {
+        margin: 5px 0px;
+    }
+    .inp-fill-form .form-control {
+        font-size: 16px;
+    }
+
+    .apk-logo img {
+        max-width: 110px;
+    }
+    .heading-3 span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .supprt-text p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    li.nav-item.socail-icons a i {
+        font-size: 20px;
+    }
+    li.nav-item.socail-icons a {
+        height: 33px;
+        width: 33px;
+    }
+    .wc-title h3 {
+        font-size: 24px;
+    }
+    .wc-text p {
+        font-size: 16px;
+    }
+    .w-c-main-container {
+        width: 310px;
+    }
+    .android-img figure img {
+        width: 200px;
+        padding: 10px;
+    }
+    section.download-apk-sec {
+        margin-top: 10px;
+        padding: 5px;
+    }
+    .download-title {
+        margin-top: 15px;
+    }
+    .download-title h3 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    button.down-ld-app {
+        margin-top: 25px;
+    }
+    .header-wapper {
+        min-height: 480px;
+    }
+    .step-head-sec h3 {
+        margin-top: 25px;
+    }   
+    .logo-sec img {
+        width: 95px;
+    }
+    .navbar-light .navbar-toggler {
+        top: -10px;
+        right: -15px;
+    }
+    li.nav-item.socail-icons a {
+        height: 33px;
+        width: 33px;
+        padding: 7px;
+    }
+
+    .group-content h4 {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .cs-me {
+        margin-right: 5px;
+    }
+    .step-head-sec h3 {
+        font-size: 24px;
+    }
+    
+    .group-content p {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .footer-menu ul li a {
+        font-size: 14px;
+    }
+
+    
+
+
+    .whatsapp-sec h4 span {
+        font-size: 20px;
+    }
+
+    .whatsapp-sec h4 {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    /* ******************************login-sigup*********************************** */
+.head-nav .btn.btn-join-now {
+    font-size: 11px;
+    padding: 4px 10px;
+}
+.head-nav .btn.btn-log-in {
+    font-size: 12px;
+    padding: 4px 15px;
+}
+.navbar-light .navbar-toggler {
+    padding: 3px 4px;
+    font-size: 18px;
+    margin-left: 2px;
+}
+.head-nav,
+.sub-footer {
+    padding: 10px 0px;
+}
+.head-nav .navbar-light .navbar-nav .nav-link,
+.sub-footer .navbar-light .navbar-nav .nav-link {
+    font-size: 12px;
+}
+.head-nav .navbar-light .navbar-nav .nav-link,
+.sub-footer .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 12px;
+}
+.login-account .form-control {
+    font-size: 12px;
+}
+.login-account .btn-tr-in {
+    font-size: 13px;
+}
+
+.header-nav {
+    width: 100%;
+}
+.login-account .login-form {
+    font-size: 22px;
+}
+.login-account .form-control, .form-select, .form-control {
+    font-size: 13px;
+}
+.login-account .form-check-label,
+.forpass a,
+.forpass-in,
+.forpass-in a {
+    font-size: 13px;
+}
+.nev-list {
+    position: absolute;
+    top: 51px;
+}
+.whatsup-img {
+    left: 13px;
+    top: 12px;
+}
+.whatsup-img img {
+    width: 16px;
+}
+.input-left .form-control {
+    padding-left: 40px;
+}
+.number-var .codein {
+    line-height: 27px;
+    border-radius: 6px;
+}
+.head-nav .logo-fluid,
+.form-label{  font-size: 14px;}
+.form-label strong{width: 100%; display: inline-block;}
+
+.game-name-text h3 {
+    font-size: 14px;
+}
+
+.casino-img img {
+    border-radius: 5px;
+}
+
+.casino-img {
+    padding: 6px 0px;
+}   
+.live-Casino-warpper {
+    margin-top: 20px;
+}
+
+.payments ul li a {
+    font-size: 15px;
+  }
+
+  .sports-sec li button {
+    padding: 0px 5px;
+    font-size: 14px;
+}
+
+.login-reg-sec {
+    padding-top: 5px;
+    padding-left: 0px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 8px 10px;
+    font-size: 14px;
+}
+ /* ***********inner-css-********** */
+
+
+   .privacy-wrapper {
+        padding: 10px;
+    }
+
+  .faq-sec button{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .faq-sec {
+        margin: 15px 20px;
+    }
+    .thm-heading p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-size: 16px !important;
+    }
+    .accordion-button::after {
+        background-size: 16px !important;
+      }
+
+      .Privacy-con ul li h3 {
+        font-size: 14px;
+    }
+
+    .Privacy-con h3{
+        font-size: 14px;
+    }
+    .Privacy-con {
+        margin-top: 10px;
+    }
+    .license-list ul li {
+        display: flex;
+        align-items: center;
+        padding: 5px 0px;
+        margin: 10px 0px;
+        border-bottom: 1px solid #000;
+        font-size: 12px;
+    }
+    
+    .Privacy-con h2{
+        font-size: 16px;
+      }
+
+      .useful-list ul {
+        column-count: 1;
+      }
+      
+      .Privacy-con h1{
+        font-size: 18px;
+      }
+
+
+    .sports-img {
+        height: auto;
+    }
+
+    .Privacy-con ul li h3 {
+        font-size: 14px;
+    }
+
+    .form-contact {
+        margin: 10px 5px;
+    }
+
+    .license-list ul li .title {
+        width: 40%;
+        margin-right: 0px;
+    }
+
+    .thm-heading h2 {
+        font-size: 16px;
+    }
+    .Privacy-con p{
+        font-size: 14px;
+      }
+
+      .login-sec li a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+    }
+
+    .about-sec {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .owl-nav button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .application-logo-sec {
+        width: 50%;
+        padding: 10px 0px;
+        margin: 0 auto;
+    }
+    .thm-but {
+        padding: 5px 12px !important;
+        font-size: 14px !important;
+    }
+    .banner-img figure img {
+        border-radius: 5px;
+    }
+
+    .col-6-text-sec h3 {
+        font-size: 14px;
+    }
+
+    .col-6-text-sec {
+        text-align: left;
+        width: 100%;
+    }
+
+    .header-wapper {
+        border-radius: 0px;
+    }
+
+    .Privacy-con ul li{
+        font-size: 12px;
+        }
+
+        .contact-user-con span {
+        font-size: 14px;
+        margin-right: 4px;
+      }
+      .contact-user-con img {
+        margin-right: 4px;
+    }
+
+    .betfair img{
+        width: 80%;
+    }
+        
+    .betfair {
+        filter: drop-shadow(2px 4px 6px black);
+         height: 40px auto;
+        margin-right: 0;
+    }
+
+    .logo-container-part .logo {
+        max-width: 160px;
+    }
+    .heading-logo-menu-section {
+        padding: 0px 10px;
+    }
+
+    .menu-bar-right-desktop-view ul li a {
+        padding: 0px 10px;
+    }
+    .logo-container-part {
+        padding-top: 0px;
+    }
+
+    .inner-header {
+        padding: 10px 0px;
+    }
+
+    .digit-round-bg {
+        width: 25px;
+        height: 25px;
+        right: 0px;
+        line-height: 26px;
+        bottom: -17px;
+    }
+
+    .digit-round-text {
+        font-size: 14px;
+    }
+
+    .heading-3 span {
+        font-size: 12px;
+        line-height: 22px;
+        padding-left: 5px;
+    }
+
+    .whatsapp-btn .thm-but {
+        font-size: 14px;
+    }
+    .live-owlupdown-slider .live-and-promo-heading {
+        margin-top: 0px;
+    }
+    .live-owlupdown-slider {
+        padding: 10px 0;
+    }
+    .live-owlupdown-slider .live-and-promo-heading h3 {
+        margin-bottom: 15px;
+    }
+    section.contact-us-sec {
+        margin-top: 20px;
+    }
+    .live-Casino-warpper {
+        margin-top: 0px;
+    }
+    .section.choose-game-sec {
+        margin-top: 25px;
+    }
+    .choose-heading-text {
+        margin-bottom: 25px;
+    }
+    .game-conter-sec {
+        margin-top: 25px;
+    }
+    .choose-heading-text {
+        margin-bottom: 15px;
+    }
+    .main-grid-container {
+        gap: 10px;
+    }
+.grid-sub-container .cmn-container123 {
+        margin: 0px;
+        padding: 10px;
+    }
+    .socail-icons-container {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .footer-wrapper {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 359px) {
+
+    .digit-round-text {
+        font-size: 14px;
+    }
+
+    section.download-apk-sec {
+        margin-top: 0px;
+    }
+
+    .live-and-promo-heading h3 {
+        font-size: 18px;
+    }
+
+    .faq-wrapper {
+        margin-top: 0px;
+    }
+
+
+
+    .step-head-sec h3 {
+        margin-top: 20px;
+    }
+
+    .registerd-and-deposit-sec {
+        margin-top: 6px;
+    }
+
+    .heading-3 {
+        margin-top: 10px;
+    }
+
+
+
+    .heading-1 h2 {
+        padding: 0px;
+    }
+    
+    .group-img img{
+        width: 80%;   
+       }
+    .apk-logo img {
+        max-width: 101px;
+    }
+    .registration-form-sec {
+        width: 300px;
+    }
+    .footer-text.supprt-text p {
+        padding: 0px 30px;
+    }
+    .main-grid-container {
+        padding: 0;
+    }
+    .w-c-main-container {
+        width: 292px;
+        margin: 10px auto;
+    }
+
+    .sky-heading h2 {
+        font-size: 14px;
+    }
+
+    .sky-club-content .owl-nav {
+        top: -30%;
+    }
+
+
+    .footer-group-contant {
+        padding-right: 5px !important;
+    }
+
+    .footer-group-sec {
+        padding: 0px 0px;
+    }
+
+    .footer-wrapper {
+        margin-top: 0px;
+    }
+
+
+    .footer-menu ul {
+        margin-top: 5px;
+    }
+
+    .sky-club-wrapper {
+        margin: 4px 0px;
+    }
+
+    .sky-club-content {
+        margin: 8px 0px;
+    }
+
+    .partner-content p {
+        margin-bottom: 3px;
+    }
+
+    .partner-content {
+        margin-top: 10px;
+    }
+
+    .footer-partner-wrapper {
+        margin-top: 10px;
+        padding: 4px 0px;
+    }
+
+    .group-content {
+        margin-top: 2px;
+    }
+
+    .Payment-sec img {
+        width: 60px;
+    }
+
+    .partner-img {
+        margin-right: 14px;
+    }
+
+    .responsive-menu-slider-sec ul li .tab-inner-con {
+        width: 80px;
+        padding: 2px 0px !important;
+    }
+
+    .custom-navbar.show .res-nav-toggler {
+        height: 26px;
+        width: 26px;
+    }
+
+    
+          /* ****************************************login-sigup************************************ */
+          .head-nav .btn.btn-log-in {
+            font-size: 11px;
+            padding: 4px 14px;
+        }
+        .head-nav .btn.btn-join-now {
+            font-size: 11px;
+            padding: 3px 7px;
+        }
+        .login-account .login-form {
+            font-size: 18px;
+        }
+        .sub-footer ul li {
+            padding: 0px 4px;
+        }
+        .number-var.mak-gin .row {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        .number-var.mak-gin .row .col-3.col-sm-3.col-md-3 {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .login-mobile-view-img {
+            max-height: 100%;
+            margin-bottom: 0px;
+        }
+    
+        .casino-img .play-thm-but {
+            padding: 2px 6px !important;
+        }
+    
+        .login-sec li a {
+            padding: 6px 10px;
+            font-size: 12px;
+        }
+        .login-sec li {
+            list-style: none;
+            margin-left: 5px;
+        }
+        .logo-and-login-section {
+            padding:0px !important;
+        }
+        /* ***********inner-css-********** */
+    
+        .faq-sec {
+            margin: 10px 0px;
+        }
+    
+        .inner-header {
+            background-color: #fff;
+            margin: 6px 0px;
+            border-radius: 0px;
+        }
+    
+        .logo-container-part .logo {
+            max-width: 140px;
+        }
+           
+        .body-container {
+            margin-right: 0px;
+        }
+ 
+        .registerd-and-deposit-sec {
+            margin-top: 0px;
+        }
+}
+
+

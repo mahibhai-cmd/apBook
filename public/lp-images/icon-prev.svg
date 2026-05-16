@@ -1,0 +1,20 @@
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<h1>404 Not Found</h1>
+<ul>
+<li>Code: NoSuchKey</li>
+<li>Message: The specified key does not exist.</li>
+<li>Key: landingpage/index.html</li>
+<li>RequestId: 8VFSHDZFDM7M1AG6</li>
+<li>HostId: rC0KJ4V4Lg0F2sWhPzfyhUYNfLLsfJS8pB+O9O9ZjvXA3/176w70DQbwo95b/8QFyaWq/eqM9i2zNd3g7SKWrORmc7CJKqwJ</li>
+</ul>
+<h3>An Error Occurred While Attempting to Retrieve a Custom Error Document</h3>
+<ul>
+<li>Code: NoSuchKey</li>
+<li>Message: The specified key does not exist.</li>
+<li>Key: index.html</li>
+</ul>
+<hr/>
+</body>
+</html>

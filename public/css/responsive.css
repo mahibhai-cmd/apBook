@@ -1,101 +1,47 @@
-@media screen and (max-width: 1200px) {
 
-    .registerd-and-deposit-sec {
-        margin-top: 60px;
+@media screen and (max-width: 1450px){
+   
+}
+
+@media screen and (max-width: 1199px){
+      
+    .banner-content .owl-dots {
+        bottom: 8%;
     }
 
+    .sky-club-content .owl-nav {
+        top: -15%;
+    }
 
-    .live-img video {
-        height: 250px !important;
+    .group-content h4 {
+        font-size: 17px;
+        margin-bottom: 1px;
+        line-height: normal;
     }
-    .ball-animation-img-1 img {
-        position: absolute;
-        right: 5%;
-        top: 20%;
-        width: 240px !important;
-    }
-    
-    .choose-game-con {
-        margin: 0px 90px;
-    } 
 
-    .ball-animation-img-3 img {
-        position: absolute;
-        left: 19%;
-        top: auto;
-        bottom: 16%;
-        width: 99px !important;
+    .group-content p {
+        font-size: 13px;
+        margin-bottom: 1px;
+        line-height: normal;
     }
-    .ball-animation-img-2 img {
-        position: absolute;
-        left: 0%;
-        top: 53%;
-        width: 99px !important;
+
+    .group-content a {
+        font-size: 13px;
+        line-height: normal;
     }
-    .step-head-sec {
-        width: 475px;
+
+    .group-img img {
+        margin-right: 0px;
+        width: 71%;
         margin: 0 auto;
     }
-    .download-title {
-        margin-top: 30px;
-    }
-    .download-title h3 {
-        font-size: 57px;
-        line-height: 65px;
-    }
-    button.down-ld-app {
-        margin-top: 20px;
-    }
-    .android-img figure img {
-        width: 250px;
-        padding: 25px;
-    }
-    .choose-game-sec .container {
-        width: 100%;
-    }
-    .footer-logo figure img {
-        height: 40px;
-    }
-    .supprt-text {
-        width: 675px;
-    }
-    .socail-icons-container .socail-list-name li {
-        padding: 3px;
-    }
-    .registration-form-sec {
-        width: 450px;
-    }
-    .footer-text.supprt-text {
-        width: 100%;
-        margin: inherit;
-    }
-    .footer-text.supprt-text p {
-        padding: 0px 65px;
-    }
-    li.nav-item.socail-icons a i {
-        color: #fff;
-        font-size: 20px;
-    }
-    .navbar-sec ul.navbar-nav.me-auto.mb-lg-0 {
-        width: 55%;
-        flex-direction: revert;
-        margin-top: 0px;
-        padding: 20px 0px;
-      }
-      li.nav-item.socail-icons a {
-        height: 35px;
-        width: 35px;
-        padding: 8px;
-    }
-    .navbar-sec ul.navbar-nav.me-auto.mb-lg-0 {
-        width: 55%;
-        flex-direction: revert;
-        margin-top: 0px;
-        padding: 20px 0px;
-        justify-content: end;
+
+    .group-img {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
     }
 
-    
     .footer-wrapper {
         margin-top: 40px;
     }
@@ -114,584 +60,527 @@
         width: 75px;
     }
 
-    
-      /* ***********inner-css-********** */
-
-      .faq-sec {
-        margin: 20px 90px;
-    }
-    .thm-heading h2 {
-        font-size: 26px;
-    }
-
 }
-@media screen and (max-width: 1024px) {
-    .container {
-        max-width: 100%;
+
+@media screen and (max-width: 1024px){
+    .sub-menu span {
+        font-size: 14px;
     }
- 
-    .choose-game-con {
-        margin: 0px 40px;
-    } 
+
+    .gtm-contant ul li {
+        margin-right: 4px;
+        padding-right: 6px;
+    }
+
+
+    .sky-btn {
+        border: none !important;
+        padding: 4px 16px;
+        font-size: 16px;
+    }
 
     .footer-wrapper {
         margin-top: 30px;
     }
 
+
+
+}
+
+@media screen and (max-width: 991px){
    
+
+ .navbar-toggler {
+    padding: 0px;
+    border: none;
+  }
+
+  .menu-bg {
+    position: relative;
+    padding: 10px 0px;
+    background: transparent !important;
 }
-@media screen and (max-width: 991px) {
-    .grid-sub-container {
-        min-width: 230px;
-    }
-    .registerd-and-deposit-sec {
-        margin-top: 40px;
-    }
 
-
-    .header-banner{
-        margin-top:60px !important;
-      }
-
-    .faq-wrapper {
-        margin-top: 40px;
-    }
-
-    .live-and-promo-heading h3 {
-        font-size: 28px;
-    }
-
-    section.live-and-promotions-sec {
-        margin-top: 60px;
-    }
-
-    .digit-round-bg {
-        width: 34px;
-        background-color: #029DE0;
-        height: 34px;
-        border-radius: 100px;
-        position: absolute;
-        top: auto;
-        right: 4px;
-        line-height: 40px;
-        bottom: 0;
-    }
-    .img-wrapper {
-        height: 100px;
-        width: 100px;
-    }
-
-    .heading-1 h2 {
-        font-size: 47px;
-    }
-
-    .ball-animation-img-3 img {
-        bottom: 30%;
-    }
-
-    .ball-animation-img-2 img {
-        top: 40%;
-    }
-
-    .ball-animation-img-1 img {
-        right: 5%;
-        top: 4%;
-        width: 190px !important;
-    }
-    .cmn-btn123 a {
-        height: 46px;
-        line-height: normal;
-      }
-      
-      
-    .cmn-btn123 button {
-        height: 46px;
-      }
-
-    .forget-login {
-        padding: 15px 20px;
-    }
-
-    .group-content h4 {
-        font-size: 16px;
-        margin-bottom: 0px;
-    }
-
-    
-    .group-content p {
-        font-size: 14px;
-    }
-
-    .payment-warpper {
-        margin-top: 10px;
-    }
-
-    .choose-game-con {
-        margin: 0px ;
-    }
-    .cmn-container123 {
-        min-height: 245px;
-    }
-
-    .wc-logo-img figure {
-        width: 125px;
-        height: 125px;
-        line-height: 120px;
-    }
-    .logo-sec img {
-        height: auto;
-        width: 110px;
-    }
-    .navbar-light .navbar-toggler {
-        color: rgba(0,0,0,.55);
-        border-color: rgba(0,0,0,.1);
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .step-head-sec {
-        width: 100%;
-    }
-    .wc-main {
-        margin-top: 0;
-        height: initial;
-    }
-    .w-c-main-container {
-        height: 425px !important;
-        margin: 15px 15px;
-    }
-    .choose-game-sec .row {
-        --bs-gutter-x: 0px;
-        --bs-gutter-y: 0;
-    }
-    .game-conter-sec {
-        margin-top: 100px;
-    }
-    .supprt-text {
-        width: 600px;
-    }
-    .footer-logo figure img {
-        height: 30px;
-    }
-    .navbar-sec ul.navbar-nav.me-auto.mb-lg-0 {
-        width: 55%;
-        flex-direction: revert;
-        margin-top: 70px;
-        padding: 20px 0px;
-        justify-content: flex-start;
-    }
-    span.navbar-toggler-icon.mobile-view {
-        position: absolute;
-        top: -25px;
-        right: 10px;
-    }
-    .frame-img-11 {
-        display: none;
-    }
-    .cmn-container123 {
-        min-height: 290px;
-    }
-
-    
-/* ***************************login-signup*************************** */
-
-.header-nav {
-    flex-flow: row-reverse;
-    justify-content: end;
-}
-.navbar-light .navbar-toggler {
-    margin-left: 10px;
-    padding: 0;
-}
-.sub-footer .navbar-nav {
-    display: flex;
-    flex-direction: inherit;
-}
-.sub-footer ul li {
-    padding: 0px 8px;
-}
-.nev-list {
+.inner-bg {
+    background-color: transparent !important;
     position: absolute;
-    top: 55px;
-    padding: 5px 11px;
-    background-color: #000;
-    border-radius: 11px;
-    right: 19px;
-    z-index: 999;
+    width: fit-content;
+    z-index: 9;
+    top: 50%;
 }
-.login-account .login-now {
-    width: 100%;
-    margin: 0;
+
+a.navbar-brand.header-contant {
+    z-index: 9;
 }
-.login-account .login-form {
-    font-size: 26px;
-}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
-.head-nav .navbar-light .navbar-nav .nav-link,
-.sub-footer .navbar-light .navbar-nav .nav-link {padding: 4px 0;}
 
- /* ***************************login-signup*************************** */
+.header-wrapper .container{
+    max-width: 100%;
+}
 
- .header-nav {
-    flex-flow: row-reverse;
+
+
+.menu-sec {
     justify-content: end;
 }
-.navbar-light .navbar-toggler {
-    margin-left: 10px;
-    padding: 0;
+
+header {
+    position: relative;
 }
-.sub-footer .navbar-nav {
-    display: flex;
-    flex-direction: inherit;
+
+.header-logo {
+    width: 170px;
 }
-.sub-footer ul li {
-    padding: 0px 8px;
-}
-.nev-list {
-    position: absolute;
-    top: 55px;
-    padding: 5px 11px;
-    background-color: #000;
-    border-radius: 11px;
-    right: 19px;
-    z-index: 999;
-}
-.login-account .login-now {
+
+.custom-navbar {
+    position: fixed;
     width: 100%;
-    margin: 0;
+    top: 0;
+    z-index: 998;
+    left: -100%;
+    transition: 0.3s linear;
+    background-color: #323232f2;
+    height: 100%;
 }
-.login-account .login-form {
-    font-size: 26px;
-}
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-.head-nav .navbar-light .navbar-nav .nav-link,
-.sub-footer .navbar-light .navbar-nav .nav-link {padding: 4px 0;}
-
-
-/* ***********inner-css-********** */
-
-.faq-sec {
-    margin: 20px 90px;
-}
-
-.thm-heading p {
-    font-size: 14px;
-}
-
-.accordion-button::after {
-    background-size: 20px !important;
-  }
   
-  .accordion-button:not(.collapsed)::after {
-  
-    background-size: 20px !important;
+  .custom-navbar.show{
+    left: 0;
   }
 
-  .privacy-wrapper {
-    padding: 15px 25px;
-    margin: 25px 0px;
+  .custom-navbar-list {
+    background-color: #111;
+    width: 30%;
+    overflow: hidden;
+    height: 100%;
+    overflow-y: auto;
 }
 
-.Privacy-con ul li h3 {
+  .nav-inner-nav li a {
+    border: none;
+}
+
+.nav-inner-nav li {
+    text-align: left;
+    margin: 0px 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff !important;
+    width: 100%;
+}
+
+
+.custom-navbar-list li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+    border-bottom: 1px solid  #707070;
+}
+
+.nav-inner-nav .nav-inner-icon {
+    display: none;
+}
+
+.banner-runngin-mag {
+    position: inherit;
+    z-index: auto;
+}
+
+.banner-icon {
+    z-index: auto;
+}
+
+.banner-icon-content {
+    z-index: auto;
+}
+
+.inner-con-home{
+    display: inline-block;
+  }
+
+  .inner-nev-img{
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .inner-nev-img img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .custom-position {
+    position: inherit;
+  }
+
+  .custom-navbar-list::after{
+    content: "";
+    background-color: #111;
+    height: 100vh;
+  }
+
+  .nav-inner-nav li a:hover {
+    transition: none;
+    background: none;
+    color: #fff;
+    border-bottom: none;
+    box-shadow:none;
+}
+
+  body {
+   background-color: #000;
+  }
+
+  .banner-content .owl-dots {
+    position: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 5px;
+    margin: 5px;
+    border: 0.6px solid var(--secondary-color);
+    border-radius: 30px;
+}
+
+.banner-img img{
+    border-radius: 15px;
+}
+
+.banner-warpper{
+    margin-top: 10px;
+}
+
+.banner-content .item{
+    width: 50%;
+}
+
+.banner-runngin-mag {
+    background: transparent;
+}
+
+.banner-icon {
+    background-color: #000;
+    padding-top: 0px;
+}
+
+.banner-icon-content marquee{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover ; 
+}
+
+.banner-img {
+    height: 150px;
+}
+
+.sports-tab-wrapper{
+    display: inline;
+}
+
+.sky-club-content {
+    background-color: transparent;
+    border-radius: 0px;
+    padding-top: 0px;
+}
+
+
+.sky-club-content .owl-nav button{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.sky-club-content .owl-nav button.owl-next {
+    background-size: 20px;
+}
+  
+.sky-club-content .owl-nav button.owl-prev {
+    background-size: 20px;
+}
+
+.sky-heading h2 {
+    color: #fff;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 8px;
+}
+
+.sky-club-content .owl-nav {
+    top: -20%;
+}
+
+.club-slider-img img{
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.group-content h4 {
     font-size: 16px;
 }
 
+.group-content p {
+    font-size: 12px;
+}
 
-.Privacy-con h5{
-    font-size: 24px;
+.group-content a {
+    font-size: 12px;
+    line-height: normal;
+}
+
+.partner-content {
+    margin-top: 14px;
+}
+
+.footer-partner-wrapper {
+    padding: 0px 0px;
+}
+
+.partner-sec .align-items-center{
+   align-items: flex-start !important;
+   margin-top: 10px;
+}
+
+.copy-right .partner-content{
+    margin-top: 5px;
+}
+
+.sports-slider{
+    display: none;
+}
+
+.responsive-menu-slider-sec {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #000;
+    height: 100%;
+}
+
+.responsive-menu-slider-list ul{
+ display: inline-block;
+}
+
+.sports-click-contant{
+    display: inline-block;
   }
 
-.Privacy-con {
+
+  li.nav-item.sports-hover-contant {
+    display: none;
+}
+.res-data-sec{
+    position: relative;
+}
+
+.res-data-sec span {
+    display: inline-block;
+    position: absolute;
+    background-color: transparent;
+    height: 100%;
+    width: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.nav-inner .navbar-nav .dropdown-menu {
+    left: 30%;
+}
+
+.custom-navbar.show .res-nav-toggler {
+    display: inline-block;
+    position: absolute;
+    top: 1%;
+    right: 8%;
+    z-index: 998;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-tab-img ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+.update-conres{
+    display: none !important;
+  }
+  .update-con{
+    display: none;
+  }
+  .gtm-contant.partner-gtm.social-icons-footer {
+    display: inherit;
+}
+.rit-side-apk-licence .license-logo-btn {
+    margin-left: 15px;
+    max-width: 100%;
+    text-align: left;
+    display: inline-block;
+    width: 250px;
+    margin-top: 0;
+}
+.rit-side-apk-licence {
+    margin-top: 20px;
+}
+.menu-sec {
+    justify-content: space-between;
+}
+
+}
+@media screen and (max-width: 767px){
+   .sub-wrapper{
+    display: none;
+   }
+
+   .inner-bg {
+    top: 4%;
+   }
+
+   .sky-club-content .owl-nav {
+    top: -26%;
+    }
+
+    .sky-club-wrapper {
+        margin: 26px 0px;
+    }
+
+   .navbar-toggler-icon {
+    background-size: 24px;
+  }
+
+  .sky-club-content .owl-nav button.owl-next {
+    background-size: 16px;
+}
+  
+.sky-club-content .owl-nav button.owl-prev {
+    background-size: 16px;
+}
+
+
+  .custom-navbar-list {
+    width: 50%;
+  }
+
+  .nav-inner-nav li a:hover {
+    transition: none;
+    background: rgba(255,255,255,.2);
+    color: #FFF;
+    border-bottom: none;
+    box-shadow: none;
+    
+}
+
+.sky-btn {
+    font-size: 14px;
+}
+
+.custom-navbar-list li {
+    padding: 4px 0px;
+}
+
+.navbar-light .navbar-toggler {
+    margin-top: 7px;
+}
+
+
+.sports-tab-sec .nav-pills {
+    display: flex;
+    width: 100%;
+    flex-wrap: initial;
+    overflow-x:auto;
+}
+
+.sports-tab-wrapper .nav-pills .nav-link {
+    font-size: 14px;
+}
+
+.tab-inner-con p {
+    font-size: 14px;
+}
+
+.content-tab-heading h4 {
+    font-size: 18px;
+}
+
+.sports-tab-img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-wrapper {
     margin-top: 20px;
 }
 
-.Privacy-con h2{
-    font-size: 20px;
-  }
-  
-  .Privacy-con h1{
-    font-size: 30px;
-  }
-
-.Privacy-con h3{
-    font-size: 18px;
-}
-.Privacy-con p{
-    font-size: 16px;
-  }
-
+.footer-wrapper {
+    padding: 0px 0px;
 }
 
-@media screen and (max-width: 767px) {
-    .main-grid-container {
-        grid-template-columns: auto auto;
-    }
-    .ball-animation-img-2 img {
-        top: 20%;
-    }
 
-    .responsive-img{
-        display: inline-block;
-    }
+.nav-inner .navbar-nav .dropdown-menu {
+    left: 50%;
+}
 
-    .download-title{
-        display: none;
-    }
-
-    .android-img{
-        display: none;
-    }
-
-    section.download-apk-sec {
-        margin-top: 20px;
-    }
-    .cmn-btn123 a {
-        font-size: 16px;
-    }
-    .ball-img-4 {
-        display: none;
-    }
-
-    .ball-img-2 {
-        display: none;
-    }
-    .ball-animation-img-3 img {
-        bottom: 13%;
-    }
-
-    .cmn-btn123 button {
-        font-size: 16px;
-    }
-
-    .download-title h3 {
-        font-size: 36px;
-        line-height: 65px;
-    }
-    .wc-text p {
-        font-size: 15px;
-        line-height: 25px;
-        margin-top: 15px;
-    }
-    .w-c-main-container {
-        height: 375px !important;
-        margin: 15px auto;
-        width: 350px;
-    }
-    .step-head-sec h3 {
-        font-size: 32px;
-        padding-bottom: 15px;
-        margin-top: 30px;
-    }
-    .banner-inside-sec {
-        width: 100%;
-        padding: 40px 0px;
-    }
-    .heading-1 h2 {
-        font-size: 32px;
-        line-height: normal;
-    }
-    .header-wapper {
-        min-height: 420px;
-    }
-
-    .about-text {
-        padding: 0px 20px;
-    }
-    .android-img figure img {
-        width: 335px;
-        padding: 10px;
-    }
-    .choose-heading-text h2 {
-        font-size: 32px;
-        line-height: 0px;
-    }
-    .inp-fill-form label {
-        font-size: 17px;
-        margin-bottom: 5px;
-    }
-    .registration-form-sec {
-        width: 400px;
-    }
-    .inp-fill-form .form-control {
-        padding: 17px 150px 17px 30px;
-    }
-    .footer-logo figure img {
-        height: 25px;
-    }
-    .footer-text.supprt-text p {
-        padding: 0px 0px;
-        line-height: 24px;
-        font-size: 16px;
-    }
-    span.navbar-toggler-icon.mobile-view {
-        padding: 5px;
-        height: 32px;
-        width: 30px;
-    }
-    .live-img video {
-        height: 200px !important;
-    }
-
-
-    .ball-animation-img-1 img {
-        top: 24%;
-        width: 90px !important;
-    }
-    .ball-img-1 {
-        display: none;
-    }
-
-    .ball-img-3 {
-        display: none;
-    }
-
-    /*****************************login-sigup************************** */
-    .header-nav {
-        width: 62%;
-    }
-    .head-nav .btn.btn-join-now {
-        font-size: 13px;
-        padding: 4px 15px;
-    }
-    .login-account .login-now {
-        width: 80%;
-        height:auto;
-        padding-top: 15px;
-    }
-    .forget-login{height: auto ;}
-    .head-nav .btn.btn-log-in {
-        font-size: 13px;
-        padding: 5px 17px;
-    }
-    .side-socail {
-        margin-top: 15px;
-    }
-    .login-account .people-in {
-        display: none;
-    }
-    .socail-1 {
-        position: inherit;
-        text-align: center;
-        right: 0;
-        bottom: 0;
-        margin-top: 0;
-    }
-    .socail-1 ul li {
-        display: inline-block;
-        padding: 5px;
-    }
-    .socail-1 ul li a img {
-        width: 35px;
-    }
-    .col-lg-6.right-side-img {
-        display: none;
-    }
-    .login-mobile-view-img {
-        display: inline-block;
-        max-height: 100%;
-        margin-bottom: 0;
-        width: 100%;
-    }   
-    .login-mobile-view-img {
-        display: inline-block;
-        max-height: 500px;
-        margin-bottom: -30px;
-    }
-    .socail-1 ul {
-        display: initial;
-    }
-
-    /* *********inner-css****** */
-    .privacy-wrapper {
-        padding: 15px 20px;
-        margin: 20px 0px;
-    }
-
-    .Privacy-con {
-        margin-top: 15px;
-    }
-    .thm-heading h2 {
-        font-size: 20px;
-    }
+.responsive-menu-slider-sec ul li {
+    margin: 0 auto;
+    padding: 0px;
+}
 
 
 }
 
+@media screen and (max-width: 575px){
 
-@media screen and (max-width: 678px){
-    .ball-animation-img-3 img {
-        bottom: 10%;
-        width: 70px !important;
-    }
-    .cmn-container123 {
-        min-height: 230px;
+    .header-contant {
+        width: 16%;
     }
 
-
-    section.whatsapp-fix {
-        position: fixed;
-        bottom: 1%;
-        right: 4%;
-        z-index: 998;
+    .banner-icon-content marquee {
+        font-size: 14px;
     }
 
-    .faq-wrapper {
-        margin-top: 20px;
+    .banner-img {
+    height: 120px;
     }
 
-    /* ***********inner-css-********** */
-
-   
-    .Privacy-con h2{
-        font-size: 18px;
-      }
-      
-      .Privacy-con h1{
-        font-size: 24px;
-      }
-
-
-    .faq-sec {
-        margin: 20px 60px;
-    }
-    .privacy-wrapper {
-        padding: 10px 15px;
-        margin: 15px 0px;
+    .tab-inner-con {
+        width: 98px;
     }
 
-    .Privacy-con h3{
-        font-size: 16px;
+    .sky-club-content .owl-nav {
+        top: -18%;
     }
-
     
-.Privacy-con h5{
-    font-size: 14px;
-    margin: 6px 0px;
-  }
-
-}
-
-@media screen and (max-width: 576px) {
-
-    .forget-login {
-        padding: 10px 15px;
+    .sky-club-content {
+        margin: 14px 0px;
     }
 
-    .live-and-promo-heading h3 {
-        font-size: 22px;
+    .club-slider-img img {
+        margin-top: 2px;
     }
 
-    section.live-and-promotions-sec {
-        margin-top: 40px;
-    }
-
-    
     .footer-logo {
-        width: 30%;
+        width: auto;
     }
     .footer-logo-sec {
         display: flex;
@@ -708,749 +597,259 @@
         text-align: center !important;
     }
 
-    .main-grid-container {
-        grid-template-columns: auto;
-    }
-    .supprt-text {
-        width: 100%;
-    }
-    .logo-sec img {
-        height: auto;
-        width: 120px;
-    }
-    .heading-1 h2 {
-        font-size: 32px;
-        line-height: 35px;
-        padding: 0px 35px;
+    .responsive-menu-slider-sec ul li .tab-inner-con{
+       width: 88px;
     }
 
-    .cmn-btn123 button {
-        width: 125px;
-        line-height: 25px;
-        font-size: 16px;
-    }
-    .android-img figure img {
-        width: 250px;
-        padding: 10px;
-    }
-    button.down-ld-app {
-        font-size: 16px;
-        padding: 8px 15px;
-        margin-top: 10px;
-    }
-    .w-c-main-container {
-        width: 320px;
-    }
-    .enquire-btn123 .cmn-btn123 button {
-        width: 160px;
-        padding: 6px;
-    }
-    .inp-fill-form .form-control {
-        padding: 15px 150px 15px 30px;
-    }
-    .f-l-row {
-        display: block;
-    }
-    .col-6-r {
-        width: 100%;
-    }
-    .col-6-l {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .footer-text.supprt-text p {
-        padding: 0px 55px;
-    }
-    .copy-rgt-sec p {
-        color: #bfc6d7;
-        font-size: 16px;
-        font-weight: 500;
-    }
-    .copy-rgt-sec {
-        margin: 10px 0px;
-    }
-    .cmn-container123 {
-        min-height: 190px;
-    }
-    .navbar-sec ul.navbar-nav.me-auto.mb-lg-0 {
-        margin-top: 35px;
-        padding: 7px 0px;
+    .custom-navbar-list {
+        width: 42%;
     }
 
-    .apk-logo img {
-        max-width: 160px;
+    .nav-inner .navbar-nav .dropdown-menu {
+        left: 42%;
     }
 
-     /* ******************************login-sigup******************************* */
-     .navbar {
-        padding-top: 0px;
-    }
-    .header-nav {
-        width: 84%;
-    }
-    .socail-1 ul li a img {
-        width: 29px;
-    }
-    .login-account .login-now {
-        width: 100%;
-    }
- 
-    .sub-footer .navbar-expand-lg {
-        flex-wrap: nowrap;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    .login-account .btn.thm-but {
-        padding: 10px;
-    }
-    .login-mobile-view-img {
-        max-height: 270px;
-        margin-bottom: -10px;
-    }
- 
-    
-     /* ***********inner-css-********** */
- 
-     .faq-sec {
-         margin: 20px 40px;
-     }
-
-     .heading-logo-menu-section {
-        padding: 0px 15px;
+    .custom-navbar.show .res-nav-toggler {
+        height: 30px;
+        width: 30px;
     }
 
-    .footer-section {
-        text-align: center;
+    .res-nav-toggler img{
+        width: 60%;
     }
 
-    .betfair ul {
-        justify-content: center;
-        margin-right: 0px;   
-        flex-wrap: nowrap;
+    .nav-inner .navbar-nav .dropdown-menu {
+        min-width: 0px !important;
     }
 
-    .body-container {
-        box-shadow: 0px 10px 10px #b0c9cceb;
-        border-radius: 10px;
+    .responsive-menu-slider-sec ul li {
+        margin: 0px 10px !important;
     }
 
-    .header-section {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        padding: 15px 0px;
+    /* .whatsapp-footer-lft span{display: none;} */
+    .whatsapp-footer-lft a {
+        height: 45px;
+        padding-right: initial;
     }
-
-    
-  .slider-join-us-sec-1 a {
-    font-size: 14px;
-    padding: 6px 20px;
-}
-.header-banner .owl-nav, .header-banner .owl-dots {
-    left: 5%;
-    bottom: 2%;
-}
-.socail-list-name li a img {
-	width: 40px;
-}
 
 }
 
-@media screen and (max-width: 479px) {
-    .live-and-promo-heading h3 {
-        font-size: 20px;
+@media screen and (max-width: 425px){
+    .tab-inner-con {
+        width: 85px;
     }
-
-    .registerd-and-deposit-sec {
-        margin-top: 20px;
+    .header-logo {
+        max-width: 100px !important;
     }
-
-
-    section.download-apk-sec {
-        margin-top: 10px;
-    }
-
-    
-    .faq-wrapper {
-        margin-top: 10px;
-    }
-
-    .cmn-container123 {
-        min-height: 90px;
-    }
-
-    .img-wrapper {
-        height: 50px;
-        width: 50px;
-        margin: 0 auto;
-    }
-    .digit-round-text {
-        font-size: 16px;
-    }
-
-    
-    .forget-login {
-        padding: 10px 8px;
-    }
-    .ball-animation-img-3 img {
-        bottom: 17%;
-        width: 57px !important;
-        left: 10%;
-    }
-
-    .frame-img-12 img {
-        position: absolute;
-        right: 8%;
-        top: auto;
-        width: 80px !important;
-        bottom: 5%;
-    }
-
-    .ball-animation-img-2 img {
-        width: 40px !important;
-    }
-
-    .ball-animation-img-1 img {
-        width: 60px !important;
-    }
-
-    .header-wapper {
-        min-height: 480px;
-    }
-    .header-banner {
-		margin-top: 50px !important;
-	}
-    
-    section.live-and-promotions-sec {
-        margin-top: 20px;
-    }
-    
-    .cmn-btn123 button {
-        font-size: 14px;
-    }
-    
-    .cmn-btn123 a {
-        height:auto;
-        padding: 6px 10px;
-        width: auto;
-        font-size: 12px;
-      }
-      
-      
-    .cmn-btn123 button {
-        line-height: normal;
-        height:auto;
-        padding: 10px 15px;
-        width: auto;
-      }
-
-
-    .registration-form-sec {
-        width: 335px;
-    }
-    .footer-logo figure img {
-        height: 22px;
-    }
-    .enquire-btn123 .cmn-btn123 button {
-        width: 145px;
-        padding: 5px;
-    }
-    .copy-rgt-sec {
-        margin: 5px 0px;
-    }
-    .inp-fill-form .form-control {
-        font-size: 16px;
-    }
-
-    .apk-logo img {
-        max-width: 110px;
-    }
-    .heading-3 span {
-        font-size: 20px;
-        line-height: 25px;
-    }
-    .supprt-text p {
-        font-size: 16px;
-        line-height: 20px;
-    }
-    li.nav-item.socail-icons a i {
-        font-size: 20px;
-    }
-    li.nav-item.socail-icons a {
-        height: 33px;
-        width: 33px;
-    }
-    .wc-title h3 {
-        font-size: 24px;
-    }
-    .wc-text p {
-        font-size: 16px;
-    }
-    .w-c-main-container {
-        width: 310px;
-    }
-    .android-img figure img {
-        width: 200px;
-        padding: 10px;
-    }
-    section.download-apk-sec {
-        margin-top: 10px;
-        padding: 5px;
-    }
-    .download-title {
-        margin-top: 15px;
-    }
-    .download-title h3 {
-        font-size: 30px;
-        line-height: 45px;
-    }
-    button.down-ld-app {
-        margin-top: 25px;
-    }
-    .header-wapper {
-        min-height: 480px;
-    }
-    .step-head-sec h3 {
-        margin-top: 25px;
-    }   
-    .logo-sec img {
-        width: 95px;
-    }
-    .navbar-light .navbar-toggler {
-        top: -10px;
-        right: -15px;
-    }
-    li.nav-item.socail-icons a {
-        height: 33px;
-        width: 33px;
-        padding: 7px;
-    }
-
-    .group-content h4 {
-        font-size: 14px;
-        margin-bottom: 0px;
-    }
-    .cs-me {
-        margin-right: 5px;
-    }
-    .step-head-sec h3 {
-        font-size: 24px;
-    }
-    
-    .group-content p {
-        font-size: 14px;
-        line-height: normal;
-    }
-
-    .footer-menu ul li a {
-        font-size: 14px;
-    }
-
-    
-
-
-    .whatsapp-sec h4 span {
-        font-size: 20px;
-    }
-
-    .whatsapp-sec h4 {
-        font-size: 11px;
-        line-height: 18px;
-    }
-
-    /* ******************************login-sigup*********************************** */
-.head-nav .btn.btn-join-now {
-    font-size: 11px;
-    padding: 4px 10px;
-}
-.head-nav .btn.btn-log-in {
-    font-size: 12px;
-    padding: 4px 15px;
-}
-.navbar-light .navbar-toggler {
-    padding: 3px 4px;
-    font-size: 18px;
-    margin-left: 2px;
-}
-.head-nav,
-.sub-footer {
-    padding: 10px 0px;
-}
-.head-nav .navbar-light .navbar-nav .nav-link,
-.sub-footer .navbar-light .navbar-nav .nav-link {
-    font-size: 12px;
-}
-.head-nav .navbar-light .navbar-nav .nav-link,
-.sub-footer .navbar-light .navbar-nav .nav-link {
-    color: #ffffff;
-    font-size: 12px;
-}
-.login-account .form-control {
-    font-size: 12px;
-}
-.login-account .btn-tr-in {
-    font-size: 13px;
 }
 
-.header-nav {
-    width: 100%;
-}
-.login-account .login-form {
-    font-size: 22px;
-}
-.login-account .form-control, .form-select, .form-control {
-    font-size: 13px;
-}
-.login-account .form-check-label,
-.forpass a,
-.forpass-in,
-.forpass-in a {
-    font-size: 13px;
-}
-.nev-list {
-    position: absolute;
-    top: 51px;
-}
-.whatsup-img {
-    left: 13px;
-    top: 12px;
-}
-.whatsup-img img {
-    width: 16px;
-}
-.input-left .form-control {
-    padding-left: 40px;
-}
-.number-var .codein {
-    line-height: 27px;
-    border-radius: 6px;
-}
-.head-nav .logo-fluid,
-.form-label{  font-size: 14px;}
-.form-label strong{width: 100%; display: inline-block;}
-
-.game-name-text h3 {
-    font-size: 14px;
-}
-
-.casino-img img {
-    border-radius: 5px;
-}
-
-.casino-img {
-    padding: 6px 0px;
-}   
-.live-Casino-warpper {
-    margin-top: 20px;
-}
-
-.payments ul li a {
-    font-size: 15px;
-  }
-
-  .sports-sec li button {
-    padding: 0px 5px;
-    font-size: 14px;
-}
-
-.login-reg-sec {
-    padding-top: 5px;
-    padding-left: 0px;
-}
-
-.navbar-nav .nav-item .nav-link {
-    padding: 8px 10px;
-    font-size: 14px;
-}
- /* ***********inner-css-********** */
-
-
-   .privacy-wrapper {
-        padding: 10px;
+@media screen and (max-width: 479px){
+    .header-contant {
+        left: 0;
+        transform: inherit;
+        position: inherit;
     }
-
-  .faq-sec button{
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-
-    .faq-sec {
-        margin: 15px 20px;
-    }
-    .thm-heading p {
-        font-size: 12px;
-        line-height: 22px;
-    }
-
-    .accordion-button:not(.collapsed)::after {
-        background-size: 16px !important;
-    }
-    .accordion-button::after {
-        background-size: 16px !important;
-      }
-
-      .Privacy-con ul li h3 {
-        font-size: 14px;
-    }
-
-    .Privacy-con h3{
-        font-size: 14px;
-    }
-    .Privacy-con {
-        margin-top: 10px;
-    }
-    .license-list ul li {
-        display: flex;
-        align-items: center;
-        padding: 5px 0px;
-        margin: 10px 0px;
-        border-bottom: 1px solid #000;
-        font-size: 12px;
-    }
-    
-    .Privacy-con h2{
-        font-size: 16px;
-      }
-
-      .useful-list ul {
-        column-count: 1;
-      }
-      
-      .Privacy-con h1{
-        font-size: 18px;
-      }
-
-
-    .sports-img {
-        height: auto;
-    }
-
-    .Privacy-con ul li h3 {
-        font-size: 14px;
-    }
-
-    .form-contact {
-        margin: 10px 5px;
-    }
-
-    .license-list ul li .title {
-        width: 40%;
-        margin-right: 0px;
-    }
-
-    .thm-heading h2 {
-        font-size: 16px;
-    }
-    .Privacy-con p{
-        font-size: 14px;
-      }
-
-      .login-sec li a {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
     .navbar-toggler-icon {
-        width: 20px;
-        height: 20px;
         background-size: 20px;
     }
 
-    .about-sec {
-        padding-top: 20px;
-        padding-bottom: 20px;
+    .header-contant {
+        width: 20%;
     }
-    .owl-nav button {
+
+    .custom-navbar-list li a{
+        padding: 4px !important;
+    }
+
+    .custom-navbar-list li {
+        margin-left: 10px;
+    }
+
+    .inner-nev-img img {
         width: 30px;
         height: 30px;
     }
 
-    .application-logo-sec {
-        width: 50%;
-        padding: 10px 0px;
+    .inner-nev-img{
+        margin-right: 2px;
+    }
+
+    .banner-img img {
+        border-radius: 10px;
+    }
+    .banner-icon-content marquee {
+        font-size: 12px;
+    }
+
+    
+    .menu-bg {
+        padding: 8px 0px;
+    }
+
+    .banner-warpper {
+        margin-top: 2px;
+    }
+
+    .content-tab-heading h4 {
+        font-size: 16px;
+    }
+
+    .sky-heading h2 {
+        font-size: 16px;
+    }
+
+    .sky-club-content .owl-nav {
+        top: -20%;
+    }
+
+    .sky-club-wrapper {
+        margin: 16px 0px;
+    }
+
+    .group-content h4 {
+        font-size: 13px;
+    }
+
+    .footer-group-contant {
+        margin: 0px !important;
+    }
+
+    .group-img {
+        margin-right: 5px;
+    }
+
+    .group-content p {
+        font-size: 11px;
+    }
+
+    .group-img img {
+        margin-right: 0px;
+        width: 30px;
         margin: 0 auto;
-    }
-    .thm-but {
-        padding: 5px 12px !important;
-        font-size: 14px !important;
-    }
-    .banner-img figure img {
-        border-radius: 5px;
+        height: 30px;
+        margin-bottom: 3px;
     }
 
-    .col-6-text-sec h3 {
-        font-size: 14px;
+    .group-content a {
+        font-size: 11px;
     }
 
-    .col-6-text-sec {
-        text-align: left;
-        width: 100%;
+    .footer-group-sec {
+        justify-content: space-between;
     }
 
-    .header-wapper {
-        border-radius: 0px;
-    }
-
-    .Privacy-con ul li{
+    .partner-content p {
         font-size: 12px;
-        }
+        line-height: 20px;
+    }
 
-        .contact-user-con span {
+    .partner-gtm ul li a {
+        font-size: 13px;
+    }
+
+    .partner-gtm ul {
+        justify-content: space-between;
+    }
+
+    .gtm-contant.partner-gtm.social-icons-footer ul {justify-content: inherit;}
+    .responsive-menu-slider-sec ul li .tab-inner-con {
+        background-color: transparent;
+        border-bottom: 1px solid #111;
+    }
+
+    .responsive-menu-slider-sec ul li{
+        margin: 0px 4px !important;
+    }
+
+    .responsive-menu-slider-sec ul li .tab-inner-con img{
+        width: 24px;
+        height: 24px;
+    }
+    .menu-sec {
+        justify-content: space-between;
+    }
+    .sky-btn{min-width: initial;}
+    .all-provider-sec .nav-pills .nav-link {
         font-size: 14px;
-        margin-right: 4px;
-      }
-      .contact-user-con img {
-        margin-right: 4px;
-    }
-
-    .betfair img{
-        width: 80%;
-    }
-        
-    .betfair {
-        filter: drop-shadow(2px 4px 6px black);
-         height: 40px auto;
-        margin-right: 0;
-    }
-
-    .logo-container-part .logo {
-        max-width: 160px;
-    }
-    .heading-logo-menu-section {
-        padding: 0px 10px;
-    }
-
-    .menu-bar-right-desktop-view ul li a {
-        padding: 0px 10px;
-    }
-    .logo-container-part {
-        padding-top: 0px;
-    }
-
-    .inner-header {
-        padding: 10px 0px;
-    }
-
-    .digit-round-bg {
-        width: 25px;
-        height: 25px;
-        right: 0px;
-        line-height: 26px;
-        bottom: -17px;
-    }
-
-    .digit-round-text {
-        font-size: 14px;
-    }
-
-    .heading-3 span {
-        font-size: 12px;
-        line-height: 22px;
-        padding-left: 5px;
-    }
-
-    .whatsapp-btn .thm-but {
-        font-size: 14px;
-    }
-    .live-owlupdown-slider .live-and-promo-heading {
-        margin-top: 0px;
-    }
-    .live-owlupdown-slider {
         padding: 10px 0;
     }
-    .live-owlupdown-slider .live-and-promo-heading h3 {
-        margin-bottom: 15px;
-    }
-    section.contact-us-sec {
-        margin-top: 20px;
-    }
-    .live-Casino-warpper {
-        margin-top: 0px;
-    }
-    .section.choose-game-sec {
-        margin-top: 25px;
-    }
-    .choose-heading-text {
-        margin-bottom: 25px;
-    }
-    .game-conter-sec {
-        margin-top: 25px;
-    }
-    .choose-heading-text {
-        margin-bottom: 15px;
-    }
-    .main-grid-container {
-        gap: 10px;
-    }
-.grid-sub-container .cmn-container123 {
-        margin: 0px;
-        padding: 10px;
-    }
-    .socail-icons-container {
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    .footer-wrapper {
-        margin-top: 20px;
+
+}
+
+@media screen and (max-width: 365px){
+    .tab-inner-con {
+        width: 74px;
     }
 }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 359px){
 
-    .digit-round-text {
+    .custom-navbar-list li a {
+        font-size: 12px;
+    }
+
+    .custom-navbar-list li {
+        padding: 2px 0px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 10px;
+        height: 3px;
+        margin: 4px;
+        border: 0.2px solid var(--secondary-color);
+        border-radius: 30px;
+    }
+
+    .banner-img {
+        height: 110px;
+    }
+
+    .sky-btn {
+        font-size: 12px;
+    }
+
+    .navbar-light .navbar-toggler {
+        margin-top: 5px;
+    }
+
+    .banner-img img {
+        border-radius: 5px;
+    }
+
+    .sports-tab-img img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 0px;
+    }
+
+    .sports-tab-img{
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+    }
+
+   
+    .sports-tab-wrapper .nav-pills .nav-link {
+        font-size: 12px;
+    }
+
+    .tab-inner-con img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .tab-inner-con p {
+        font-size: 12px;
+    }
+
+    .content-tab-heading h4 {
         font-size: 14px;
     }
 
-    section.download-apk-sec {
-        margin-top: 0px;
+    .sports-tab-sec .nav-pills .nav-link.active::after {
+        border-width: 7px;
     }
 
-    .live-and-promo-heading h3 {
-        font-size: 18px;
-    }
-
-    .faq-wrapper {
-        margin-top: 0px;
-    }
-
-
-
-    .step-head-sec h3 {
-        margin-top: 20px;
-    }
-
-    .registerd-and-deposit-sec {
-        margin-top: 6px;
-    }
-
-    .heading-3 {
-        margin-top: 10px;
-    }
-
-
-
-    .heading-1 h2 {
-        padding: 0px;
-    }
-    
-    .group-img img{
-        width: 80%;   
-       }
-    .apk-logo img {
-        max-width: 101px;
-    }
-    .registration-form-sec {
-        width: 300px;
-    }
-    .footer-text.supprt-text p {
-        padding: 0px 30px;
-    }
-    .main-grid-container {
-        padding: 0;
-    }
-    .w-c-main-container {
-        width: 292px;
-        margin: 10px auto;
-    }
 
     .sky-heading h2 {
         font-size: 14px;
@@ -1460,7 +859,14 @@
         top: -30%;
     }
 
+    .footer-group-contant {
+        display: initial;
+    }
 
+    .group-img {
+        display: inherit;
+    }
+   
     .footer-group-contant {
         padding-right: 5px !important;
     }
@@ -1473,6 +879,9 @@
         margin-top: 0px;
     }
 
+    .footer-menu ul li a {
+        font-size: 12px;
+    }
 
     .footer-menu ul {
         margin-top: 5px;
@@ -1520,74 +929,4 @@
         height: 26px;
         width: 26px;
     }
-
-    
-          /* ****************************************login-sigup************************************ */
-          .head-nav .btn.btn-log-in {
-            font-size: 11px;
-            padding: 4px 14px;
-        }
-        .head-nav .btn.btn-join-now {
-            font-size: 11px;
-            padding: 3px 7px;
-        }
-        .login-account .login-form {
-            font-size: 18px;
-        }
-        .sub-footer ul li {
-            padding: 0px 4px;
-        }
-        .number-var.mak-gin .row {
-            margin-left: -5px;
-            margin-right: -5px;
-        }
-        .number-var.mak-gin .row .col-3.col-sm-3.col-md-3 {
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-        .login-mobile-view-img {
-            max-height: 100%;
-            margin-bottom: 0px;
-        }
-    
-        .casino-img .play-thm-but {
-            padding: 2px 6px !important;
-        }
-    
-        .login-sec li a {
-            padding: 6px 10px;
-            font-size: 12px;
-        }
-        .login-sec li {
-            list-style: none;
-            margin-left: 5px;
-        }
-        .logo-and-login-section {
-            padding:0px !important;
-        }
-        /* ***********inner-css-********** */
-    
-        .faq-sec {
-            margin: 10px 0px;
-        }
-    
-        .inner-header {
-            background-color: #fff;
-            margin: 6px 0px;
-            border-radius: 0px;
-        }
-    
-        .logo-container-part .logo {
-            max-width: 140px;
-        }
-           
-        .body-container {
-            margin-right: 0px;
-        }
- 
-        .registerd-and-deposit-sec {
-            margin-top: 0px;
-        }
 }
-
-

@@ -1,80 +1,185 @@
-import Link from "next/link";
+'use client';
+import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import type { Metadata } from 'next';
 
-export default function Register() {
+export default function RegisterPage() {
+  const [phone, setPhone] = useState('');
+  const [otp, setOtp] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPass, setConfirmPass] = useState('');
+  const [username, setUsername] = useState('');
+  const [showCustomId, setShowCustomId] = useState(false);
+  const [showPass, setShowPass] = useState(false);
+  const [otpSent, setOtpSent] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleGetOtp = () => {
+    if (!phone || phone.length !== 10) { setError('Enter a valid 10-digit mobile number.'); return; }
+    setError('');
+    setOtpSent(true);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!phone) { setError('Mobile number is required.'); return; }
+    if (!otp) { setError('OTP is required.'); return; }
+    if (!password || password.length < 8) { setError('Password must be at least 8 characters.'); return; }
+    if (password !== confirmPass) { setError('Passwords do not match.'); return; }
+    setError('');
+    alert('Registration submitted');
+  };
+
   return (
-    <div className="register-wrapper" style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#e9e9f0' }}>
-      <div className="register-left" style={{ flex: 1, padding: '40px', display: 'flex', flexDirection: 'column' }}>
-        <div style={{ marginBottom: '40px' }}>
+    <div className="login-page-wrapper">
+      <div className="login-left-sec">
+        <div className="login-logo">
           <Link href="/">
-            <div style={{ backgroundColor: '#474799', padding: '10px 20px', display: 'inline-block', borderRadius: '4px' }}>
-              <img src="/logo.png" alt="APBook" style={{ height: '30px' }} />
-            </div>
+            <Image src="/logo.png" alt="APBook" width={130} height={45} />
           </Link>
         </div>
 
-        <div style={{ maxWidth: '400px', margin: '0 auto', width: '100%' }}>
-          <h1 style={{ textAlign: 'center', fontSize: '32px', fontWeight: 'bold', marginBottom: '30px', color: '#000' }}>Register</h1>
+        <div className="login-form-container">
+          <h1 className="login-title">Register</h1>
 
-          <div style={{ display: 'flex', marginBottom: '10px', backgroundColor: '#fff', borderRadius: '4px', border: '1px solid #ddd' }}>
-            <div style={{ padding: '12px 15px', borderRight: '1px solid #ddd', display: 'flex', alignItems: 'center', gap: '5px' }}>
-              <img src="https://flagcdn.com/w20/in.png" alt="IN" style={{ width: '20px' }} />
-              <span>+91</span>
-              <i className="fa-solid fa-chevron-down" style={{ fontSize: '10px' }}></i>
+          <form onSubmit={handleSubmit}>
+            {/* Phone */}
+            <div className="input-group-flag">
+              <div className="flag-prefix">
+                <Image src="https://flagcdn.com/w20/in.png" alt="IN" width={20} height={14} unoptimized />
+                <span>+91</span>
+                <i className="fa-solid fa-chevron-down" />
+              </div>
+              <input
+                type="tel"
+                maxLength={10}
+                placeholder="Enter Mobile Number *"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value.replace(/\D/g, '').slice(0, 10))}
+                className="form-control login-input"
+                style={{ flex: 1 }}
+              />
+              <button
+                type="button"
+                className="btn otp-inline-btn"
+                onClick={handleGetOtp}
+              >
+                {otpSent ? 'Resend OTP' : 'Get OTP'}
+              </button>
             </div>
-            <input type="text" placeholder="Enter Mobile Number *" style={{ flex: 1, padding: '12px', border: 'none', outline: 'none' }} />
-            <button style={{ padding: '0 15px', backgroundColor: '#ffba00', border: 'none', borderLeft: '1px solid #ddd', fontWeight: 'bold', cursor: 'pointer' }}>Get OTP</button>
-          </div>
 
-          <div style={{ textAlign: 'right', marginBottom: '15px' }}>
-            <a href="#" style={{ color: '#474799', fontSize: '12px', textDecoration: 'underline' }}>Want To Set User ID?</a>
-          </div>
+            {/* Custom ID toggle */}
+            <div style={{ textAlign: 'right', marginBottom: '12px' }}>
+              <button
+                type="button"
+                className="link-btn"
+                onClick={() => setShowCustomId((v) => !v)}
+              >
+                {showCustomId ? 'Hide User ID' : 'Want To Set User ID?'}
+              </button>
+            </div>
 
-          <div style={{ position: 'relative', marginBottom: '15px' }}>
-            <i className="fa-solid fa-lock" style={{ position: 'absolute', left: '15px', top: '15px', color: '#999' }}></i>
-            <input type="password" placeholder="Enter Password*" style={{ width: '100%', padding: '12px 12px 12px 40px', border: '1px solid #ddd', borderRadius: '4px', outline: 'none' }} />
-            <i className="fa-solid fa-eye-slash" style={{ position: 'absolute', right: '15px', top: '15px', color: '#999', cursor: 'pointer' }}></i>
-          </div>
+            {showCustomId && (
+              <div className="input-icon-wrap">
+                <i className="fa-solid fa-user input-icon" />
+                <input
+                  type="text"
+                  placeholder="Enter Custom User ID"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className="form-control login-input"
+                />
+              </div>
+            )}
 
-          <div style={{ position: 'relative', marginBottom: '10px' }}>
-            <i className="fa-solid fa-lock" style={{ position: 'absolute', left: '15px', top: '15px', color: '#999' }}></i>
-            <input type="password" placeholder="Enter Confirm Password*" style={{ width: '100%', padding: '12px 12px 12px 40px', border: '1px solid #ddd', borderRadius: '4px', outline: 'none' }} />
-            <i className="fa-solid fa-eye-slash" style={{ position: 'absolute', right: '15px', top: '15px', color: '#999', cursor: 'pointer' }}></i>
-          </div>
+            {/* OTP */}
+            <div className="input-icon-wrap">
+              <i className="fa-solid fa-key input-icon" />
+              <input
+                type="text"
+                maxLength={6}
+                placeholder="Enter OTP *"
+                value={otp}
+                onChange={(e) => setOtp(e.target.value.replace(/\D/g, '').slice(0, 6))}
+                className="form-control login-input"
+              />
+            </div>
 
-          <div style={{ textAlign: 'right', marginBottom: '20px' }}>
-            <a href="#" style={{ color: '#474799', fontSize: '12px', textDecoration: 'underline' }}>Have a Referral Code?</a>
-          </div>
+            {/* Password */}
+            <div className="input-icon-wrap" style={{ position: 'relative' }}>
+              <i className="fa-solid fa-lock input-icon" />
+              <input
+                type={showPass ? 'text' : 'password'}
+                minLength={8}
+                maxLength={20}
+                placeholder="Enter Password *"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="form-control login-input"
+              />
+              <button
+                type="button"
+                className="eye-btn"
+                onClick={() => setShowPass((v) => !v)}
+                aria-label={showPass ? 'Hide' : 'Show'}
+              >
+                <i className={`fa-solid ${showPass ? 'fa-eye' : 'fa-eye-slash'}`} />
+              </button>
+            </div>
 
-          <div style={{ marginBottom: '20px' }}>
-            <button style={{ width: '100%', padding: '12px', backgroundColor: '#ffba00', color: '#000', border: 'none', borderRadius: '4px', fontWeight: 'bold', cursor: 'pointer' }}>Register</button>
-          </div>
+            {/* Confirm Password */}
+            <div className="input-icon-wrap">
+              <i className="fa-solid fa-lock input-icon" />
+              <input
+                type="password"
+                minLength={8}
+                maxLength={20}
+                placeholder="Confirm Password *"
+                value={confirmPass}
+                onChange={(e) => setConfirmPass(e.target.value)}
+                className="form-control login-input"
+              />
+            </div>
 
-          <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-            <p style={{ fontSize: '12px', color: '#666', marginBottom: '10px' }}>Get your ready-made ID from whatsapp</p>
-            <button style={{ width: '100%', padding: '12px', backgroundColor: '#4caf50', color: '#fff', border: 'none', borderRadius: '4px', fontWeight: 'bold', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-              <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i> Whatsapp Now
+            {error && <p className="error-msg">{error}</p>}
+
+            <button type="submit" className="btn login-btn" style={{ width: '100%', marginTop: '8px' }}>
+              Register
             </button>
-          </div>
+          </form>
 
-          <div style={{ textAlign: 'center', position: 'relative', marginBottom: '20px' }}>
-            <hr style={{ border: 'none', borderTop: '1px solid #ddd' }} />
-            <span style={{ position: 'absolute', top: '-10px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#e9e9f0', padding: '0 10px', fontSize: '12px', color: '#666' }}>or register with</span>
-          </div>
+          <p className="whatsapp-hint">Get your ready-made ID from WhatsApp</p>
+          <a
+            href="https://wa.me/919876543210"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn whatsapp-btn"
+          >
+            <i className="fa-brands fa-whatsapp" />
+            Whatsapp Now
+          </a>
 
-          <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-            <a href="#" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', backgroundColor: '#0088cc', borderRadius: '50%', color: '#fff', fontSize: '20px', textDecoration: 'none' }}>
-              <i className="fa-brands fa-telegram"></i>
+          <div className="or-divider"><span>or register with</span></div>
+
+          <div className="social-login">
+            <a href="https://t.me/apbook" target="_blank" rel="noopener noreferrer" className="telegram-icon">
+              <i className="fa-brands fa-telegram" />
             </a>
           </div>
 
-          <div style={{ textAlign: 'center', fontSize: '14px', color: '#000' }}>
-            Already have an account? <Link href="/login" style={{ color: '#474799', textDecoration: 'none', fontWeight: 'bold' }}>Login</Link>
-          </div>
+          <p className="register-link">
+            Already have an account?{' '}
+            <Link href="/login">Login</Link>
+          </p>
         </div>
       </div>
-      
-      <div className="register-right" style={{ flex: 1, backgroundImage: 'url(/register-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      </div>
+
+      <div
+        className="login-right-sec"
+        style={{ backgroundImage: 'url(/image_38.webp)' }}
+        aria-hidden="true"
+      />
     </div>
   );
 }

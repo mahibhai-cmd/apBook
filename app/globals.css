@@ -1,26 +1,448 @@
-@import "tailwindcss";
+/* ─────────────────────────────────────────────────────────
+   APBook Theme — LP20 overrides  (matches apbook front_css)
+   ───────────────────────────────────────────────────────── */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color:            #363636;
+  --secondary-color:          #b3b5b6;
+  --header_color:             #054146;
+  --orange_color:             #12bcca;
+  --fancy-tabs:               #12bcca;
+  --active_clr_world_casino:  #fe3030;
+  --light_bg_world_casino:    #363636;
+  /* LP20 page bg */
+  --page-bg:  #1a1f2c;
+  --card-bg:  rgb(42 50 70);
+  --card2-bg: #1e2433;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--page-bg);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; height: auto; }
+
+/* ── Announcement bar ────────────────────────────────── */
+.announcement-bar {
+  background: var(--header_color);
+  color: #fff;
+  padding: 7px 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--orange_color);
+  font-size: 13px;
+}
+.announcement-bar .marquee-inner {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 28s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
+}
+
+/* ── Header ──────────────────────────────────────────── */
+.header-wapper-main {
+  position: fixed; top: 0; width: 100%; z-index: 999;
+}
+.header-section-fixed {
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  padding: 10px 0;
+}
+.head-nav-sec {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.navbar-brand { display: flex; align-items: center; }
+.logo-sec      { margin: 0; }
+.logo-sec .logo { height: 46px; width: auto; object-fit: contain; }
+
+.cmn-btn123 { display: flex !important; gap: 10px; align-items: center; }
+.cmn-btn123 > div > a, .cmn-btn123 > div > button {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-size: 14px; font-weight: 600;
+  cursor: pointer; border: none;
+  transition: opacity .2s;
+}
+/* Login = outline */
+.cmn-btn123 > div:first-child > a {
+  background: transparent;
+  border: 1.5px solid #fff;
+  color: #fff;
+}
+.cmn-btn123 > div:first-child > a:hover { background: rgba(255,255,255,.15); }
+/* Register = filled teal */
+.signUpBtn > a {
+  background: var(--orange_color) !important;
+  color: #000 !important;
+}
+.signUpBtn > a:hover { opacity: .85; }
+
+/* The hero banner sits under the transparent header — no extra padding needed */
+main { padding-top: 0; }
+
+/* ── Hero Banner ─────────────────────────────────────── */
+.header-banner { position: relative; overflow: hidden; background: #000; }
+.main-slider-img { width: 100%; display: block; object-fit: cover; max-height: 550px; }
+
+.carousel-dots {
+  position: absolute; bottom: 14px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; gap: 8px; z-index: 10;
+}
+.carousel-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  border: none; cursor: pointer; padding: 0;
+  background: rgba(255,255,255,.5);
+  transition: all .3s;
+}
+.carousel-dot.active { background: var(--orange_color); width: 20px; border-radius: 4px; }
+
+/* ── Register Steps ──────────────────────────────────── */
+.registerd-and-deposit-sec { margin-top: 70px; padding: 20px 0; }
+
+.cmn-container123 {
+  background-color: rgb(42 50 70);
+  text-align: center;
+  border-radius: 15px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+.cmn-container123:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+
+.cmn-sec { position: relative; display: inline-block; }
+.img-wrapper { display: flex; justify-content: center; align-items: center; height: 90px; }
+.img-wrapper img { max-width: 80px; max-height: 80px; object-fit: contain; }
+
+.digit-round-bg {
+  width: 40px; height: 40px; border-radius: 50%;
+  background-color: #029DE0;
+  position: absolute; bottom: -10px; right: -10px;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 2;
+}
+.digit-round-text { color: #000; font-size: 14px; font-weight: 700; }
+
+.heading-3 { margin-top: 18px; }
+.heading-3 span { color: #fff; font-size: 18px; font-weight: 600; }
+
+/* ── Section headings ────────────────────────────────── */
+.live-and-promo-heading h3 {
+  font-size: 24px; color: #bfc6d7;
+  font-weight: 600; margin-bottom: 15px; text-align: center;
+}
+.choose-heading-text {
+  text-align: center; margin-bottom: 45px;
+}
+.choose-heading-text h2 {
+  color: #fff; font-size: 36px; font-weight: 700;
+}
+
+/* ── Live Games / Promotion section ─────────────────── */
+section.live-and-promotions-sec { margin-top: 75px; }
+.live-owlupdown-slider { position: relative; }
+
+.casino-img.live-casino-bx { cursor: pointer; display: inline-block; }
+.Casino-resize.live-img {
+  width: 100px; height: 100px;
+  border-radius: 10px; overflow: hidden; margin: 5px;
+}
+.Casino-resize.live-img img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+
+.sports-content img { border-radius: 8px; margin: 5px; }
+
+.promotion-slider .item figure img {
+  width: 100%; border-radius: 10px;
+}
+
+.live-games-grid {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.new-games-grid {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+
+/* ── Download APK section ────────────────────────────── */
+section.download-apk-sec {
+  margin-top: 50px;
+  background: linear-gradient(135deg, #171c28 0%, #1c2232 100%);
+  padding: 50px 0;
+}
+.download-title h3 {
+  color: #fff; font-size: 42px; font-weight: 700; line-height: 1.2;
+  margin-bottom: 20px;
+}
+button.down-ld-app {
+  font-size: 16px; font-weight: 700; letter-spacing: 1px;
+  border: 0; cursor: pointer;
+  background-color: rgb(32 38 54);
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: transform .15s;
+}
+button.down-ld-app:hover { transform: translate(4px, 4px); }
+
+/* ── Why Choose Us ───────────────────────────────────── */
+section.choose-game-sec { margin-top: 75px; padding: 50px 0; }
+
+.w-c-main-container {
+  text-align: center;
+  background: #1e2433;
+  padding: 28px 20px;
+  border-radius: 20px;
+  height: 100%;
+  transition: box-shadow .2s;
+}
+.w-c-main-container:hover { box-shadow: 0 16px 32px rgba(0,0,0,.4); }
+.wc-logo-img figure { display: flex; justify-content: center; margin-bottom: 0; }
+.wc-logo-img img { width: 80px; height: 80px; object-fit: contain; }
+.wc-title h3 { color: #fff; font-size: 22px; font-weight: 700; margin: 14px 0 8px; }
+.wc-text p  { color: #bfc6d7; font-size: 15px; line-height: 1.6; }
+.wc-main { margin-top: 25px; height: 100%; }
+
+/* ── Game Counter ────────────────────────────────────── */
+.game-conter-sec { margin-top: 75px; padding: 50px 0; }
+.main-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.grid-sub-container { min-width: 220px; }
+.cg-support-and-help {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 24px;
+  display: flex; gap: 16px; align-items: center;
+}
+.cg-support-and-help .heading-3 { margin-top: 0; }
+.cg-support-and-help .heading-3 span { font-size: 16px; }
+
+/* ── Connect With Us ─────────────────────────────────── */
+section.contact-us-sec { margin-top: 75px; padding: 50px 0; }
+.supprt-text {
+  text-align: center; margin-bottom: 24px;
+}
+.supprt-text p {
+  color: #bfc6d7; font-size: 16px; line-height: 1.6;
+  display: inline-block;
+}
+.socail-icons-container { text-align: center; margin-bottom: 50px; }
+.socail-list-name { list-style: none; padding: 0; margin: 20px 0; }
+.socail-list-name li {
+  display: inline-block; padding: 5px;
+}
+.socail-list-name li a img {
+  width: 50px; height: 50px; object-fit: contain;
+  transition: transform .2s;
+}
+.socail-list-name li a:hover img { transform: scale(1.15); }
+
+/* ── Footer ──────────────────────────────────────────── */
+.footer-wrapper {
+  background-color: var(--page-bg);
+  border-top: 1px solid rgba(255,255,255,.08);
+  margin-top: 50px; padding: 30px 0 20px;
+}
+.footer-group-sec {
+  display: flex; justify-content: center; padding: 10px 0; margin-bottom: 20px;
+}
+.footer-group-contant { display: flex; gap: 16px; align-items: center; }
+.footer-group-contant .group-img img { width: 56px; height: 56px; object-fit: contain; }
+.footer-group-contant .group-content h4 { color: var(--orange_color); font-size: 16px; margin: 0 0 4px; }
+.footer-group-contant .group-content p  { color: #bfc6d7; font-size: 13px; margin: 0 0 6px; }
+.contact-us { color: var(--orange_color); font-size: 13px; cursor: pointer; text-decoration: underline; }
+
+.footer-partner-wrapper { margin-bottom: 20px; }
+.partner-content p {
+  font-size: 13px; line-height: 1.5; font-weight: 400;
+  margin-bottom: 8px; color: rgba(242,242,242,.8);
+}
+.Responsible-sec, .Payment-sec {
+  display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+}
+.partner-img img { height: 36px; width: auto; object-fit: contain; }
+.payment-label {
+  background: var(--card-bg); color: #bfc6d7;
+  font-size: 12px; padding: 5px 12px; border-radius: 4px;
+}
+
+.know-more {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end;
+}
+.know-more li a { color: rgba(242,242,242,.8); font-size: 13px; transition: color .2s; }
+.know-more li a:hover { color: var(--orange_color); }
+
+.copy-right p { font-size: 12px; color: rgba(242,242,242,.6); margin-top: 12px; }
+
+/* WhatsApp float */
+.whatsapp-fix-wrapper {
+  position: fixed; bottom: 70px; right: 16px; z-index: 9999;
+}
+.whatsapp-img-con { position: relative; }
+.whatsapp-con {
+  position: absolute; bottom: 108%; right: 0;
+  background: #25d366; color: #fff; font-size: 12px;
+  padding: 4px 10px; border-radius: 8px; white-space: nowrap;
+}
+.blinking { animation: blink 1.2s step-start infinite; font-weight: 700; }
+@keyframes blink { 50% { opacity: 0; } }
+.whatsapp-imges { width: 56px; height: 56px; object-fit: contain; }
+
+/* Back to top */
+.go-to-top-btn {
+  position: fixed; bottom: 16px; right: 16px; z-index: 9999;
+  background: var(--orange_color); border-radius: 50%;
+  width: 42px; height: 42px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 14px rgba(18,188,202,.4);
+  transition: transform .2s;
+}
+.go-to-top-btn:hover { transform: translateY(-3px); }
+.go-to-top-btn img { width: 20px; height: 20px; }
+
+/* ── Login / Register pages ──────────────────────────── */
+.login-page-wrapper {
+  display: flex; min-height: 100vh;
+  background: #e9e9f0;
+}
+.login-left-sec {
+  flex: 1; max-width: 500px;
+  background: #e9e9f0; padding: 36px 40px;
+  display: flex; flex-direction: column; overflow-y: auto;
+}
+.login-right-sec {
+  flex: 1.3; background-size: cover; background-position: center;
+  display: none;
+}
+@media (min-width: 768px) { .login-right-sec { display: block; } }
+
+.login-logo { margin-bottom: 32px; }
+.login-form-container { max-width: 420px; width: 100%; margin: 0 auto; }
+.login-title {
+  text-align: center; font-size: 28px; font-weight: 700;
+  color: #111; margin-bottom: 24px;
+}
+
+.login-tab-group { display: flex; border-radius: 4px; overflow: hidden; margin-bottom: 18px; }
+.login-tab {
+  flex: 1; padding: 12px; border: none; cursor: pointer;
+  font-weight: 600; font-size: 14px;
+  background: #f0f0f0; color: #666;
+}
+.login-tab.active { background: #474799; color: #fff; }
+
+.input-group-flag {
+  display: flex; align-items: center;
+  border: 1px solid #ddd; border-radius: 4px;
+  background: #fff; margin-bottom: 14px; overflow: hidden;
+}
+.flag-prefix {
+  display: flex; align-items: center; gap: 6px;
+  padding: 12px 12px; border-right: 1px solid #ddd;
+  font-size: 14px; background: #fafafa;
+}
+.input-icon-wrap { position: relative; margin-bottom: 14px; }
+.input-icon {
+  position: absolute; left: 13px; top: 50%;
+  transform: translateY(-50%); color: #999; pointer-events: none;
+}
+.login-input {
+  width: 100% !important;
+  padding: 12px 12px 12px 38px !important;
+  border: 1px solid #ddd; border-radius: 4px;
+  outline: none; font-size: 14px; background: #fff; color: #333;
+}
+.input-group-flag .login-input {
+  border: none !important; padding-left: 12px !important; flex: 1;
+}
+.eye-btn {
+  position: absolute; right: 12px; top: 50%;
+  transform: translateY(-50%); background: none; border: none; cursor: pointer; color: #999;
+}
+.radio-group { display: flex; gap: 20px; margin-bottom: 14px; }
+.radio-label { display: flex; align-items: center; gap: 6px; font-size: 14px; color: #333; cursor: pointer; }
+.otp-group { display: flex; gap: 8px; margin-bottom: 14px; }
+.otp-btn, .otp-inline-btn {
+  background: #ffba00 !important; color: #000 !important;
+  border: none; padding: 0 16px; border-radius: 4px;
+  font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+.forgot-link { text-align: right; margin-bottom: 14px; }
+.forgot-link a { color: #474799; font-size: 13px; }
+.error-msg { color: #e53e3e; font-size: 13px; margin-bottom: 10px; }
+.login-btn-group { display: flex; gap: 10px; margin-bottom: 18px; }
+.demo-btn, .login-btn {
+  flex: 1; padding: 12px;
+  background: #ffba00 !important; color: #000 !important;
+  border: none; border-radius: 4px; font-weight: 700; cursor: pointer;
+}
+.whatsapp-hint { font-size: 13px; color: #555; margin: 0 0 10px; text-align: center; }
+.whatsapp-btn {
+  display: flex !important; align-items: center !important;
+  justify-content: center !important; gap: 10px !important;
+  width: 100%; padding: 12px !important;
+  background: #4caf50 !important; color: #fff !important;
+  border: none; border-radius: 4px; font-weight: 700;
+  cursor: pointer; margin-bottom: 18px; font-size: 15px;
+}
+.or-divider {
+  position: relative; text-align: center; margin: 16px 0;
+}
+.or-divider::before {
+  content: ''; position: absolute;
+  top: 50%; left: 0; right: 0; border-top: 1px solid #ddd;
+}
+.or-divider span {
+  position: relative; background: #e9e9f0;
+  padding: 0 12px; font-size: 13px; color: #666;
+}
+.social-login { display: flex; justify-content: center; margin-bottom: 18px; }
+.telegram-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 42px; height: 42px;
+  background: #0088cc; color: #fff;
+  border-radius: 50%; font-size: 20px;
+}
+.register-link { text-align: center; font-size: 14px; color: #333; }
+.register-link a { color: #474799; font-weight: 700; }
+.link-btn {
+  background: none; border: none; color: #474799;
+  font-size: 13px; text-decoration: underline; cursor: pointer; padding: 0;
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 767px) {
+  .login-left-sec { max-width: 100%; padding: 24px 16px; }
+  .know-more      { justify-content: center; }
+  .head-nav-sec   { padding: 0 8px; }
+  .cmn-btn123 > div > a { padding: 7px 14px; font-size: 13px; }
+  .download-title h3 { font-size: 28px; }
+  .wc-title h3 { font-size: 18px; }
+  .main-grid-container { grid-template-columns: 1fr; }
 }
