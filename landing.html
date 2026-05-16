@@ -1,0 +1,484 @@
+<section class="header-wapper-main">
+	<header class="header-section-fixed" loading="lazy">
+		<div class="container">
+			<div class="navbar-sec">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="head-nav-sec">
+						<a class="navbar-brand" href="JavaScript:void(0);" x-data="domainLogo()">
+							<figure class="logo-sec"> <img class="logo" :src="logoImage" alt=""> </figure>
+						</a>
+						<form class="d-flex cmn-btn123 align-items-center" x-data="navHandler()">
+							<div> <a href="Javascript:void(0);" @click="goToLogin" > Login</a></div>
+							<div class="signUpBtn"> <a href="Javascript:void(0);" @click="goToSignUp">Register</a></div>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>	
+</section>
+
+<!-- Main Slider -->
+<section class="banner-bg header-banner" loading="lazy" x-data="mainSliderCarousel()" x-init="initMainSliderCarousel()" x-show="mainSliderItems.length > 0">
+	<div class="banner-content owl-carousel owl-theme" id="banner-slider" x-html="mainSliderItems">
+		<!-- This banner image is dynamic -->
+	</div>
+</section>
+<section class="registerd-and-deposit-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 col-6">
+				<div class="cmn-container123">
+					<a href="JavaScript:void(0);">
+						<div class="cmn-sec">
+							<figure class="img-wrapper"> <img src="assets/images/landing-page-20/revenue.c38d0307.png" alt=""> </figure>
+							<div class="digit-round-bg"> <span class="digit-round-text">01</span> </div>
+						</div>
+						<div class="heading-3"> <span>Register</span> </div>
+					</a>
+				</div>
+			</div>
+			<div class=" col-lg-3 col-sm-6 col-6">
+				<div class="cmn-container123">
+					<a href="JavaScript:void(0);">
+						<div class="cmn-sec">
+							<figure class="img-wrapper"> <img src="assets/images/landing-page-20/1st.a4dec475.png" alt=""> </figure>
+							<div class="digit-round-bg"> <span class="digit-round-text">02</span> </div>
+						</div>
+						<div class="heading-3"> <span>Deposit</span> </div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-6">
+				<div class="cmn-container123">
+					<a href="JavaScript:void(0);">
+						<div class="cmn-sec">
+							<figure class="img-wrapper"> <img src="assets/images/landing-page-20/jackpot.506204dd.png" alt=""> </figure>
+							<div class="digit-round-bg"> <span class="digit-round-text">03</span> </div>
+						</div>
+						<div class="heading-3"> <span>Play & Win</span> </div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-6">
+				<div class="cmn-container123">
+					<a href="JavaScript:void(0);">
+						<div class="cmn-sec">
+							<figure class="img-wrapper"> <img src="assets/images/landing-page-20/withdrawal-icon.png" alt=""> </figure>
+							<div class="digit-round-bg"> <span class="digit-round-text">04</span> </div>
+						</div>
+						<div class="heading-3"> <span>Withdrawal</span> </div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="live-and-promotions-sec ">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-12 col-md-6 col-lg-6" x-data="celebrateVideoSliderCarousel()" x-init="initCeleVideoSliders()">
+				<div class="live-owlupdown-slider row" x-show="celeVideoItems.length > 0">
+					
+					<!-- Celebrate Video -->
+					<div class="col-12">
+						<div class="live-and-promo-heading">
+							<h3>Celebrate video</h3>
+						</div>
+						<div class="owl-carousel owl-theme" id="live-video-slider-up" x-html="celeVideoItems">
+							<!-- Dynamic video items injected here -->
+						</div>
+					</div>
+			
+					<!-- Offer Video -->
+					<div class="col-12">
+						<div class="live-and-promo-heading">
+							<h3>Offer video</h3>
+						</div>
+						<div class="owl-carousel owl-theme" id="live-video-slider-down" x-html="celeVideoItems">
+							<!-- Dynamic video items injected here -->
+						</div>
+					</div>
+			
+				</div>
+			</div>
+
+			<div class="col-sm-12 col-md-6 col-lg-6">
+				<div class="live-and-promo-sec">
+					<div class="live-and-promo-heading">
+						<h3>knowledge video</h3>
+					</div>
+					<section class="video-Promotion-warpper Free-bonus-warpper banner-bg" loading="lazy" x-data="videoSliderSection()" x-init="initVideoSlider()" x-show="videoItems.length > 0">
+						<div class="video-sec">
+							<div class="owl-carousel owl-theme video-slider-sec" id="video-slider" x-html="videoItems">
+								<!-- This video promotion slider is dynamic  -->
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="download-apk-sec" x-data="downloadApk()">
+	<div class="container">
+		<div class="download-app">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-6 col-12">
+					<div class="download-title">
+						<h3>Download our app</h3>
+						<a x-show="apk !== null" x-bind:href="apkUrl" id="clickToDownloadApk">
+							<button type="button" class="down-ld-app">DOWNLOAD APK</button>
+						</a>
+						<a x-show="apk === null" href="#install-apk-model" data-bs-toggle="modal" id="clickToDownloadApk">
+							<button type="button" class="down-ld-app">DOWNLOAD APK</button>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-6 col-12">
+					<div class="android-img">
+						<figure> <img src="assets/images/landing-page-20/bb7android.324f0208.png" alt=""> </figure>
+					</div>
+					<div class="responsive-img">
+						<a x-show="apk !== null" x-bind:href="apkUrl" id="mobile-download-apk">
+							<img src="assets/images/landing-page-20/application-img.svg" alt="">
+						</a>
+						<a x-show="apk === null" href="#install-apk-model" data-bs-toggle="modal" id="mobile-download-apk">
+							<img src="assets/images/landing-page-20/application-img.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="live-and-promotions-sec ">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-12 col-md-6 col-lg-6">
+				<div class="live-owlupdown-slider row">
+					<div class="col-12">
+						<div class="live-and-promo-heading">
+							<h3>Live Games</h3>
+						</div>
+						<!-- Live Casino Section -->
+						<section class="live-Casino-warpper" loading="lazy" x-data="liveCasinoCarouselLP20()" x-init="initLiveCasinoLP20()" x-show="casinoItemsLP20.length > 0">
+							<div class=" live-Casino-contant">
+								<div class="owl-carousel owl-theme casino-conetnt" id="live-slider-up" x-html="casinoItemsLP20">
+									<!-- This Live games slider is dynamic -->
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="col-12">
+						<div class="live-and-promo-heading">
+							<h3>New games</h3>
+						</div>
+						
+						<!-- Sports Slider -->
+						<section class="sports-warpper" loading="lazy" x-data="sportsSliderCarousel()" x-init="initSportsCarousel()" x-show="sportsItems.length > 0">
+							<div class="">
+								<div class="sports-sec game-providers">
+									<div class=" owl-carousel owl-theme sports-slider-sec" id="sports-slider"  x-html="sportsItems">
+										<!-- This new games in sports slider set -->
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-6">
+				<div class="live-and-promo-sec">
+					<div class="live-and-promo-heading">
+						<h3>Promotion</h3>
+					</div>
+					<!-- promotion slider -->
+					<section class="promotion-img-warpper banner-bg Free-bonus-warpper live-and-promo-img" loading="lazy" x-data="promotionSliderCarousel()" x-init="initPromotionSlider()" x-show="promotionItems.length > 0">
+							<div class="promotion-slider banner-content Free-bonus-sec owl-carousel owl-theme" id="promotion-slider"  x-html="promotionItems">
+								
+							</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="choose-game-sec">
+	<div class="container">
+		<div class="choose-heading-text">
+			<h2>Why Choose Us?</h2> </div>
+		<div class="choose-game-con">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="w-c-main-container">
+						<div class="wc-logo-img">
+							<figure> <img src="assets/images/landing-page-20/revenue.c38d0307.png" alt=""> </figure>
+						</div>
+						<div class="wc-title">
+							<h3>Live Games</h3> </div>
+						<div class="wc-text">
+							<p>The best place to play is always at home. We’re bringing you the best online game streaming experience: A surprising Range Of 750+ Sports & Casino games!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="w-c-main-container">
+						<div class="wc-logo-img">
+							<figure> <img src="assets/images/landing-page-20/staking.357640f7.png" alt=""> </figure>
+						</div>
+						<div class="wc-title">
+							<h3>Live Streaming</h3> </div>
+						<div class="wc-text">
+							<p>Step up your game. Our fast and live streaming of your favorite online games lets you Play Better!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="w-c-main-container">
+						<div class="wc-logo-img">
+							<figure> <img src="assets/images/landing-page-20/token.79b776f8.png" alt=""> </figure>
+						</div>
+						<div class="wc-title">
+							<h3>Live Games</h3> </div>
+						<div class="wc-text">
+							<p>Our Enhanced Design is built to help you get your gaming skills off the ground faster. So focus on growing your earning skill instead of worrying about the little details.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="wc-main">
+						<div class="w-c-main-container">
+							<div class="wc-logo-img">
+								<figure> <img src="assets/images/landing-page-20/jackpot.506204dd.png" alt=""> </figure>
+							</div>
+							<div class="wc-title">
+								<h3>Easy to Pay</h3> </div>
+							<div class="wc-text">
+								<p>Making your life simple and gainful. Play online games anywhere and anytime.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="wc-main">
+						<div class="w-c-main-container">
+							<div class="wc-logo-img">
+								<figure> <img src="assets/images/landing-page-20/revenue.c38d0307.png" alt=""> </figure>
+							</div>
+							<div class="wc-title">
+								<h3>Safe & Secured</h3> </div>
+							<div class="wc-text">
+								<p>A safe and secure platform is built upon a foundation of trust, And our platform is designed with you in mind, With safety and security at its core, we're committed to provide a safe environment for everyone.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="wc-main">
+						<div class="w-c-main-container">
+							<div class="wc-logo-img">
+								<figure> <img src="assets/images/landing-page-20/staking.357640f7.png" alt=""> </figure>
+							</div>
+							<div class="wc-title">
+								<h3>24x7 Customer Support</h3> </div>
+							<div class="wc-text">
+								<p>We know what’s best for you! Available for your support 24/7.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="game-conter-sec">
+	<div class="container">
+		<div class="choose-heading-text">
+			<h2>Game Counter</h2> </div>
+		<div class="main-grid-container">
+			<div class="grid-sub-container">
+				<div class="cmn-container123">
+					<div class="cg-support-and-help">
+						<figure class="img-wrapper"> <img src="assets/images/landing-page-20/revenue.c38d0307.png" alt=""> </figure>
+						<div class="heading-3"> <span>Total Customers <br> 1M+</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-sub-container">
+				<div class="cmn-container123">
+					<div class="cg-support-and-help">
+						<figure class="img-wrapper"> <img src="assets/images/landing-page-20/1st.a4dec475.png" alt=""> </figure>
+						<div class="heading-3"> <span>Total Active Customers <br> 50000+</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-sub-container">
+				<div class="cmn-container123">
+					<div class="cg-support-and-help">
+						<figure class="img-wrapper"> <img src="assets/images/landing-page-20/jackpot.506204dd.png" alt=""> </figure>
+						<div class="heading-3"> <span>Total Games <br> 700+</span> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contact-us-sec">
+	<div class="container">
+		<div class="choose-heading-text">
+			<h2>Connect With Us</h2> </div>
+		<div class="supprt-text">
+			<p>It is never too late to reach out to our customer support team. We are available at any time of the day/night to assist you with any queries.</p>
+		</div>
+		<div class="socail-icons-container">
+			<ul class="socail-list-name side-socail" x-data="socialLinkHandler()">
+				<li x-show="socialLink.whatsappLink">
+					<a :href="socialLink.whatsappLink" target="_blank">
+						<img src="assets/images/landing-page-20/wt1.png" alt="whatsapp" />
+					</a>
+				</li>
+				<li x-show="socialLink.instagramLink">
+					<a :href="socialLink.instagramLink" target="_blank">
+						<img src="assets/images/landing-page-20/instagram.png" alt="instagram" />
+					</a>
+				</li>
+				<li x-show="socialLink.telegramLink">
+					<a :href="socialLink.telegramLink" target="_blank">
+						<img src="assets/images/landing-page-20/telegram.png" alt="telegram" />
+					</a>
+				</li>
+				<li x-show="socialLink.youtubeLink">
+					<a :href="socialLink.youtubeLink" target="_blank">
+						<img src="assets/images/landing-page-20/youtube.png" alt="youtube" />
+					</a>
+				</li>
+				<li x-show="socialLink.facebookLink">
+					<a :href="socialLink.facebookLink" target="_blank">
+						<img src="assets/images/landing-page-20/facebook.png" alt="facebook" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="registration-form-sec d-none">
+			<div class="inp-fill-form">
+				<label for="">Full Name*</label>
+				<input type="text" placeholder="Enter Your Name" class="form-control"> </div>
+			<div class="inp-fill-form">
+				<label for="">Phone</label>
+				<input type="text" value="+91" class="form-control"> </div>
+			<div class="inp-fill-form">
+				<label for="">Country*</label>
+				<input type="text" value="India" class="form-control"> </div>
+			<div class="inp-fill-form">
+				<div class="enquire-btn123">
+					<form class="cmn-btn123">
+						<button class="btn" type="submit">ENQUIRY NOW</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer-wrapper">
+	<div class="container">
+		<div class="footer-group-sec">
+			<div class="footer-group-contant cs-me quality-sec">
+				<div class="group-img"> <img src="assets/images/landing-page-20/icon-24hr.png" alt="icon-24hr"> </div>
+				<div class="group-content">
+					<h4>Online CS</h4>
+					<p>Provides 24/7 Quality service</p> <a class="contact-us">Contact CS</a> </div>
+			</div>
+		</div>
+		<div class="footer-partner-wrapper">
+			<div class="partner-sec">
+				<div class="row">
+					<div class="col-lg-4 ">
+						<div class="partner-content ">
+							<p>Responsible Gaming</p>
+							<div class="partner-content-img Responsible-sec">
+								<div class="partner-img"> <img src="/T1/assets/images/layouts/safe1.svg" alt="safe1"> </div>
+								<div class="partner-img"> <img src="/T1/assets/images/layouts/safe2.svg" alt="safe3"> </div>
+								<div class="partner-img"> <img src="/T1/assets/images/layouts/safe3.svg" alt="safe3"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 payment-warpper">
+						<section class="Payment-warpper" loading="lazy">
+							<div class="partner-content payment-methods">
+								<p>Payment Methods</p>
+								<div class="game-providers">
+									<div class="payment-methods">
+										<div class="payment-box" x-data="paymentSection()" x-init="initPayment()" x-show="payments.length > 0">
+											<div class="payment-contant partner-content-img  Payment-sec">
+												<template x-for="payment in payments">
+													<a href="javascript:void(0);">
+														<img class="payment-image" :src="getImageUrl(payment.image)" :alt="payment.poster_sub_type || 'Payment'">
+													</a>
+												</template>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-partner-wrapper">
+			<div class="partner-sec">
+				<div class="row  align-items-center">
+					<div class="col-lg-3 col-md-4 col-sm-3">
+						<div class="footer-logo-sec logo-sec license-logo">
+							<img src="assets/images/landing-page-20/license-logo.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-9  col-md-8 col-sm-9 justify-content-end">
+						<div class="footer-menu">
+							<ul class="know-more" x-data="availableUserJourneyVideos()">
+								<li><a href="/T1/layouts/about-us.html">About us</a></li>
+                                <li><a href="/T1/layouts/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="/T1/layouts/term-and-condition.html">Term And Condition</a></li>
+                                <li><a href="/T1/layouts/rules.html">Rules and Regulations</a></li>
+								<template x-if="videos.play">
+									<li><a href="JavaScript:void(0);" type="button" data-bs-toggle="modal" data-bs-target="#playModal">How To Play</a></li>
+								</template>
+								<template x-if="videos.login">
+									<li><a href="JavaScript:void(0);" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">How To Login</a></li>
+								</template>
+								<template x-if="videos.register">
+									<li><a href="JavaScript:void(0);" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">How To Register</a></li>
+								</template>
+							</ul>
+						</div>
+						<div class="copy-right">
+							<div class="partner-content text-end  about-heading">
+								<p>&copy;<span><label x-data="yearComponent()" x-text="currentYear"></label> <label class="text-capitalize" x-data="showDomainName()" x-text="domainName"></label> </span>Copyrights. All Rights Reserved</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Load all modal components (Download APK, How to Play, How to Login, How to Register) from an external HTML file using Alpine.js. -->
+<div x-data x-init="fetch('/T1/components/modals.html').then(res => res.text()).then(html => $el.innerHTML = html)"></div>
+
+<a id="button" class="go-to-top-btn" title="Go to top"  x-data="scrollToUpBtn()" @click="scrollToTop">
+	<img src="assets/images/landing-page-20/angles-up-solid.svg" alt="">
+</a>
+<section class="whatsapp-fix-wrapper" x-data="socialLinkHandler()" x-show="socialLink.whatsappLink">
+    <div class="whatsapp-img-con">
+        <a :href="socialLink.whatsappLink" id="footerWhatsupLink" target="_blank">
+            <img class="whatsapp-imges whatsup" src="./assets/images/landing-page-9/whatsapp-img.svg" alt="whatsup">
+            <div class="whatsapp-con">
+                <h5 class="blinking">1 click register</h5>
+            </div>
+        </a>
+    </div>
+</section>
