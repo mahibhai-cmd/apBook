@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HeroBanner from './components/HeroBanner';
-import StepsSection from './components/StepsSection';
-import LiveGamesSection from './components/LiveGamesSection';
-import DownloadSection from './components/DownloadSection';
-import WhyChooseSection from './components/WhyChooseSection';
-import GameCounterSection from './components/GameCounterSection';
-import ContactSection from './components/ContactSection';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import HeroBanner from '../components/HeroBanner';
+import StepsSection from '../components/StepsSection';
+import LiveGamesSection from '../components/LiveGamesSection';
+import DownloadSection from '../components/DownloadSection';
+import WhyChooseSection from '../components/WhyChooseSection';
+import GameCounterSection from '../components/GameCounterSection';
+import ContactSection from '../components/ContactSection';
 
 export const metadata: Metadata = {
   title: 'APBook – Most Trusted Online Betting Exchange in India | Best Odds',

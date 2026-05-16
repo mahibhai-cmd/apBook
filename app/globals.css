@@ -28,6 +28,9 @@ body {
   overflow-x: hidden;
 }
 
+/* auth-style.css sets body bg to #f1f0f5 !important — restore dark bg for main site */
+body { background-color: var(--page-bg) !important; }
+
 /* Remove underline on all links but do NOT override LP20 link colors */
 a { text-decoration: none; }
 img { max-width: 100%; height: auto; }

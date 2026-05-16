@@ -16,17 +16,13 @@ export default function GameCounterSection() {
         <div className="main-grid-container">
           {STATS.map(({ img, label, value }) => (
             <div key={label} className="grid-sub-container">
-              <div className="cmn-container123" style={{ minHeight: '120px', flexDirection: 'row' }}>
-                <div className="cg-support-and-help" style={{ width: '100%' }}>
-                  <figure className="img-wrapper" style={{ height: '60px', marginBottom: 0 }}>
-                    <Image src={img} alt={label} width={60} height={60} />
+              <div className="cmn-container123">
+                <div className="cg-support-and-help">
+                  <figure className="img-wrapper">
+                    <Image src={img} alt={label} width={80} height={80} loading="eager" />
                   </figure>
-                  <div className="heading-3" style={{ textAlign: 'left' }}>
-                    <span style={{ fontSize: '15px', lineHeight: '1.4' }}>
-                      {label}
-                      <br />
-                      <strong style={{ fontSize: '22px', color: '#029DE0' }}>{value}</strong>
-                    </span>
+                  <div className="heading-3">
+                    <span>{label}<br />{value}</span>
                   </div>
                 </div>
               </div>

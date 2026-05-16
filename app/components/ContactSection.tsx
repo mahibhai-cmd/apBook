@@ -26,8 +26,9 @@ export default function ContactSection() {
           <ul className="socail-list-name side-socail">
             {SOCIALS.map(({ img, alt, href }) => (
               <li key={alt}>
-                <a href={href} target={href !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
-                  <Image src={img} alt={alt} width={52} height={52} />
+                <a href={href} target="_blank" rel="noopener noreferrer">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={img} alt={alt} width={52} height={52} />
                 </a>
               </li>
             ))}

@@ -1,0 +1,280 @@
+@media screen and (max-width: 991px) {
+    .header-nav {
+        flex-flow: row-reverse;
+        justify-content: end;
+    }
+    .navbar-light .navbar-toggler {
+        margin-left: 10px;
+        padding: 0;
+    }
+    .sub-footer .navbar-nav {
+        display: flex;
+        flex-direction: inherit;
+    }
+    .sub-footer ul li {
+        padding: 0px 8px;
+    }
+    .nev-list {
+        position: absolute;
+        top: 55px;
+        padding: 5px 11px;
+        background-color: #000;
+        border-radius: 11px;
+        right: 19px;
+        z-index: 999999;
+    }
+    .login-account .login-now {
+        width: 100%;
+        margin: 0;
+    }
+    .login-account .login-form {
+        font-size: 26px;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .head-nav .navbar-light .navbar-nav .nav-link,
+    .sub-footer .navbar-light .navbar-nav .nav-link {
+        padding: 4px 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .forget-login {
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    .header-nav {
+        width: 62%;
+    }
+    .head-nav .btn.btn-join-now {
+        font-size: 13px;
+        padding: 4px 15px;
+    }
+    .login-account .login-now {
+        width: 80%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .head-nav .btn.btn-log-in {
+        font-size: 13px;
+        padding: 5px 32px;
+    }
+    .login-account .people-in {
+        display: none;
+    }
+    .socail-1 {
+        position: inherit;
+        text-align: center;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+    }
+    .socail-1 ul li {
+        display: inline-block;
+        padding: 5px;
+    }
+    .socail-1 ul li a img {
+        width: 35px;
+    }
+    .col-lg-6.right-side-img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .navbar {
+        padding-top: 0px;
+    }
+    .header-nav {
+        width: 84%;
+    }
+    .socail-1 ul li a img {
+        width: 29px;
+    }
+    .login-account .login-now {
+        width: 100%;
+    }
+
+    .login_with_whatsapp {
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 479px) {
+    .mak-gin {
+        margin-bottom: .5rem;
+    } 
+    .login-flow-heading {
+        padding-bottom: 10px;
+    }
+    .get_otp_btn1 {
+        top: 3px;
+    }
+    .user_icon3 {
+        top: 7px;
+    }
+    .pl-100 {
+        padding-left: 78px !important;
+    }
+    .pr-100 {
+        padding-right: 90px!important;
+    }
+    .pr-110 {
+        padding-right: 120px!important;
+    }
+    .country-icon {
+        font-size: 12px;
+        min-width: 78px;
+    }
+    .country-icon img {
+        max-height: 12px;
+        max-width: 16px;
+    }	
+    .country-icon svg{
+        flex: 0 0 16px;
+        height: 16px;
+    }
+    .head-nav .btn.btn-join-now {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+    .head-nav .btn.btn-log-in {
+        font-size: 12px;
+        padding: 4px 15px;
+    }
+    .navbar-light .navbar-toggler {
+        padding: 3px 4px;
+        font-size: 18px;
+        margin-left: 2px;
+    }
+    .head-nav,
+    .sub-footer {
+        padding: 10px 0px;
+    }
+    .head-nav .navbar-light .navbar-nav .nav-link,
+    .sub-footer .navbar-light .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+    .head-nav .navbar-light .navbar-nav .nav-link,
+    .sub-footer .navbar-light .navbar-nav .nav-link {
+        color: #ffffff;
+        font-size: 12px;
+    }
+    .login-account .form-control {
+        font-size: 12px;
+    }
+    .login-account .btn-tr-in {
+        font-size: 12px;
+    }
+    .navbar-brand {
+        margin: 0px;
+        width: 66%;
+    }
+    .header-nav {
+        width: 100%;
+    }
+    .login-account .login-form {
+        font-size: 22px;
+    }
+    .login-account .form-control, .form-select, .form-control {
+        font-size: 13px;
+    }
+    .login-account .form-check-label,
+    .forpass a,
+    .forpass-in,
+    .forpass-in a {
+        font-size: 13px;
+    }
+    .nev-list {
+        position: absolute;
+        top: 51px;
+    }
+    .whatsup-img {
+        left: 13px;
+        top: 7px;
+    }
+    .whatsup-img img {
+        width: 16px;
+    }
+    .input-left .form-control {
+        padding-left: 40px;
+    }
+    .number-var .codein {
+        line-height: 27px;
+        border-radius: 6px;
+    }
+    .head-nav .logo-fluid,
+    .sub-footer .logo-fluid {
+        height: 30px;
+    }
+    
+    .login-account{
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    /* .password-show-hide {
+        top: 10px !important;
+  } */
+    .mak-gin .get-otp-btn {
+        top: 4px !important;
+    }
+
+    .mak-gin .get-otp-btn {
+        height: 31px;
+    }
+
+    .login_tabs_sec ul li button {
+        padding: 9px;
+    }
+   
+
+}
+@media only screen and (max-width: 359px) {
+    .register-country-code {
+        flex: 0 0 auto;
+        width: 25%;
+        padding-left: 12px;
+        padding-right: 0px;
+    }
+    .head-nav .btn.btn-log-in {
+        font-size: 11px;
+        padding: 4px 14px;
+    }
+    .head-nav .btn.btn-join-now {
+        font-size: 11px;
+        padding: 3px 7px;
+    }
+    .login-account .login-form {
+        font-size: 20px;
+    }
+    .sub-footer ul li {
+        padding: 0px 4px;
+    }
+    .number-var.mak-gin .row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .number-var.mak-gin .row .col-3.col-sm-3.col-md-3 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .fg-pass-remem {
+        color: #000;
+        text-align: end !important;
+        float: right;
+        font-size: 12px;
+    }
+    .login-now .mak-gin.text-danger .row {
+        margin-left: -5px;margin-right: -5px;
+    }
+
+    .login-now .mak-gin.text-danger .row .col-4.col-sm-4.col-md-4, 
+    .login-now .mak-gin.text-danger .row .col-8.col-sm-8.col-md-8{
+        padding-left: 5px;padding-right: 5px;
+    }
+
+
+
+}

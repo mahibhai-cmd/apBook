@@ -42,7 +42,7 @@ export default function WhyChooseSection() {
                   <div className="w-c-main-container">
                     <div className="wc-logo-img">
                       <figure>
-                        <Image src={img} alt={title} width={100} height={100} />
+                        <Image src={img} alt={title} width={100} height={100} loading="eager" />
                       </figure>
                     </div>
                     <div className="wc-title"><h3>{title}</h3></div>
