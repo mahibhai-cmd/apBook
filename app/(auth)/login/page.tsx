@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     'Log in to APBook – India\'s most trusted betting exchange. Access your account, place bets on cricket, football & casino games. Instant login with mobile number or user ID.',
   keywords: 'APBook login, apbok.in login, apbook.in login, betting exchange login India, online betting login',
   alternates: { canonical: 'https://www.apbok.in/login' },
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
   openGraph: {
     title: 'Login | APBook – Most Trusted Betting Exchange India',
     description: 'Log in to APBook – India\'s most trusted online betting exchange.',
