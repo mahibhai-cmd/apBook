@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-const BASE = 'https://www.apbook.in';
+const BASE = 'https://www.apbok.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),
@@ -13,11 +13,12 @@ export const metadata: Metadata = {
   description:
     'Bet with the most trusted online betting exchange in India. Get the best odds on cricket, football & live casino. Instant withdrawals & deposits, 24/7 customer support, refer bonus. 700+ games. Join APBook today!',
   keywords: [
-    'APBook', 'apbook.in', 'online betting India', 'betting exchange India',
+    'APBook', 'apbok.in', 'apbook.in', 'online betting India', 'betting exchange India',
     'cricket betting', 'live casino India', 'sports betting India',
     'online gambling India', 'best betting odds India', 'instant withdrawal betting',
     'online casino India', 'IPL betting', 'football betting India',
-    'APBook register', 'APBook login',
+    'APBook register', 'APBook login', 'apbok', 'AP Book',
+    'cricket betting exchange', 'best odds cricket India',
   ],
   authors: [{ name: 'APBook', url: BASE }],
   creator: 'APBook',

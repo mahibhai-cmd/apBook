@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   description:
     "APBook is India's most trusted online betting exchange. Get the best odds on cricket, football & casino. Instant withdrawals, 24/7 support, 700+ games. Register now & get a welcome bonus.",
   keywords:
-    'APBook, online betting India, betting exchange, cricket betting, live casino India, online casino India, sports betting, apbook.in',
-  alternates: { canonical: 'https://www.apbook.in/' },
+    'APBook, apbok.in, apbook.in, online betting India, betting exchange, cricket betting, live casino India, online casino India, sports betting, IPL betting, football betting India',
+  alternates: { canonical: 'https://www.apbok.in/' },
 };
 
 export default function HomePage() {
